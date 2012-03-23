@@ -84,6 +84,8 @@ set grepprg=grep\ -nH\ $*
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+" use bibtex8 to support biblatex
 let g:Tex_BibtexFlavor = "bibtex8"
 
 " Taglist / LaTeX
