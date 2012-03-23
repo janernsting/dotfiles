@@ -1,0 +1,99 @@
+" pathogen manages plugins / https://github.com/tpope/vim-pathogen
+call pathogen#infect()
+
+" 4 spaces per tabstop
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+" Autoindentation is useful, too
+set autoindent
+
+" Search is only case-sensitive for upper-case characters
+set smartcase
+set hlsearch
+set incsearch
+
+" Use mouse
+set mouse=a
+set nomousefocus
+set mousehide
+
+" Remember more commands and search history
+set history=1000
+
+" Make tab completion for files/buffers act like bash
+set wildmenu
+
+" Turn on line numbers
+set number
+
+" Leader key on comma
+let mapleader = ','
+
+" show commands
+set showcmd
+
+" always show current filename and its status
+set laststatus=2
+
+" display at least three lines when scrolling
+set scrolloff=3
+
+" Toggle line numbers and fold column for easy copying:
+nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+
+" Python syntax
+autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
+
+" NERDTree toggling
+nmap <silent> <leader>t :NERDTreeToggle<CR>
+
+" PyDiction
+let g:pydiction_location='/home/jan/.vim/ftplugin/pydiction/complete-dict'
+
+" Taglist variables
+" Display function name in status bar:
+let g:ctags_statusline=1
+" Automatically start script
+let generate_tags=1
+" Displays taglist results in a vertical window:
+let Tlist_Use_Horiz_Window=0
+" Shorter commands to toggle Taglist display
+nnoremap TT :TlistToggle<CR>
+nmap <silent> <leader>f :TlistToggle<CR>
+" Various Taglist diplay config:
+let Tlist_Compact_Format = 1
+let Tlist_Exit_OnlyWindow = 1           " exit if taglist is last window open
+let Tlist_Show_One_File = 1             " only show tags for current buffer
+let Tlist_Enable_Fold_Column = 0        " no fold column (only showing one file)
+let Tlist_GainFocus_On_ToggleOpen = 1   " automatically gain focus
+let Tlist_File_Fold_Auto_Close = 1
+
+" LaTeX suite
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+filetype plugin indent on
+
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" search in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+let g:Tex_BibtexFlavor = "bibtex8"
+
+" Taglist / LaTeX
+let tlist_bib_settings   = 'bib;a:BibTeX-Authors;e:BibTeX-Entries;t:BibTeX-Titles;s:BibTeX-Strings'
+let tlist_make_settings  = 'make;m:makros;t:targets'
+let tlist_tex_settings   = 'latex;s:Contents;g:Graphics;i:Listings;l:\label;r:\ref;p:\pageref;b:\bibitem'
+
+" Solarized color scheme
+" syntax enable
+" set t_Co=16
+" set background=dark
+" let g:solarized_termcolors=16
+" colorscheme solarized
