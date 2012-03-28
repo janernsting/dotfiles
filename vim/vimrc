@@ -93,10 +93,3 @@ let g:Tex_BibtexFlavor = "bibtex8"
 let tlist_bib_settings   = 'bib;a:BibTeX-Authors;e:BibTeX-Entries;t:BibTeX-Titles;s:BibTeX-Strings'
 let tlist_make_settings  = 'make;m:makros;t:targets'
 let tlist_tex_settings   = 'latex;s:Contents;g:Graphics;i:Listings;l:\label;r:\ref;p:\pageref;b:\bibitem'
-
-" Solarized color scheme
-" syntax enable
-" set t_Co=16
-" set background=dark
-" let g:solarized_termcolors=16
-" colorscheme solarized
