@@ -1,4 +1,5 @@
-" pathogen manages plugins / https://github.com/tpope/vim-pathogen
+" pathogen manages plugins
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 " 4 spaces per tabstop
