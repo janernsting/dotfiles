@@ -7,7 +7,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-
 " 4 spaces per tabstop
 set tabstop=4
 set softtabstop=4
@@ -56,6 +55,9 @@ autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
 " NERDTree toggling
 nmap <silent> <leader>t :NERDTreeToggle<CR>
+
+" Gundo toggling
+nmap <silent> <leader>g :GundoToggle<CR>
 
 " PyDiction
 let g:pydiction_location='/home/jan/.vim/ftplugin/pydiction/complete-dict'
