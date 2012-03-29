@@ -60,6 +60,9 @@ nmap <silent> <leader>t :NERDTreeToggle<CR>
 " Gundo toggling
 nmap <silent> <leader>g :GundoToggle<CR>
 
+" Gitv should automatically decide where to place preview
+let g:Gitv_OpenHorizontal = "auto"
+
 " PyDiction
 let g:pydiction_location='/home/jan/.vim/ftplugin/pydiction/complete-dict'
 
