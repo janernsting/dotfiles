@@ -7,6 +7,9 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
+" tell vim to use a dark background
+set background=dark
+
 " 4 spaces per tabstop
 set tabstop=4
 set softtabstop=4
