@@ -10,8 +10,9 @@ install-vim:
 	ln -s ~/.vim/vimrc ~/.vimrc
 
 install-git:
-	rm -rf ~/.gitconfig
+	rm -rf ~/.gitconfig ~/.gitignore_global
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
+	ln -s `pwd`/git/gitignore_global ~/.gitignore_global
 
 install-bash:
 	rm -rf ~/.bashrc ~/.bash_aliases ~/.inputrc
