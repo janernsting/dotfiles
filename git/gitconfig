@@ -1,0 +1,29 @@
+[user]
+    email = jan.ernsting@gmail.com
+    name = Jan Ernsting
+[giggle]
+    main-window-maximized = false
+    main-window-geometry = 1328x999+66+82
+    history-view-vpane-position = 681
+    main-window-view = HistoryView
+    show-graph = true
+    file-view-vpane-position = 663
+[core]
+    editor = vi
+    excludesfile = ~/.gitignore_global
+[color]
+    ui = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[alias]
+    st = status -sb
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    graph = log --graph --decorate --oneline
+    who = shortlog -s --
+    wdf = diff --color-words
