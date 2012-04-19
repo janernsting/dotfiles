@@ -1,3 +1,5 @@
 # use vi bindings
 set editing-mode vi
 set keymap vi-insert
+
+set completion-ignore-case on
