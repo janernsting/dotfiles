@@ -4,6 +4,7 @@ $include /etc/inputrc
 set editing-mode vi
 set keymap vi-insert
 
+set show-all-if-ambiguous on
 set completion-ignore-case on
 
 # map history search onto cursor keys
