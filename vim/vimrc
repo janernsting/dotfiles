@@ -20,6 +20,7 @@ set expandtab
 set autoindent
 
 " Search is only case-sensitive for upper-case characters
+set ignorecase
 set smartcase
 set hlsearch
 set incsearch
