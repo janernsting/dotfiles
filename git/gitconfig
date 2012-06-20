@@ -23,7 +23,7 @@
     br = branch
     co = checkout
     df = diff
-    lg = log -p
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     graph = log --graph --decorate --oneline
     who = shortlog -s --
     wdf = diff --color-words
