@@ -56,6 +56,9 @@ set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 " display at least three lines when scrolling
 set scrolloff=3
 
+" allow to save files with root permissions
+cmap w!! w !sudo tee >/dev/null %
+
 " Toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
