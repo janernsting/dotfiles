@@ -107,6 +107,9 @@ export SVN_EDITOR=vim
 # editing should happen using vi
 export EDITOR=vim
 
+# always use english language
+export LANG=en_GB.UTF-8
+
 # export PS1='\[\033[1;30m\]\u@\h:\[\033[0m\]\w\[\033[0;33m\]$(parse_git_branch)\[\033[0m\]$ '
 
 export GIT_PS1_SHOWDIRTYSTATE=enabled
