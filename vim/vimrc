@@ -43,6 +43,9 @@ set wildmenu
 " Turn on line numbers
 set number
 
+" remap escape (eliminates reaching for escape key)
+inoremap jj <ESC>
+
 " Leader key on comma
 let mapleader = ','
 
