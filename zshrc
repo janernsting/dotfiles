@@ -42,3 +42,6 @@ bindkey "\e[B" history-search-forward
 # Provide emacs like binding for searching
 bindkey "^r" history-incremental-search-backward
 bindkey "^s" history-incremental-search-forward
+
+# Use command not found
+. /etc/zsh_command_not_found
