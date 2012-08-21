@@ -38,3 +38,7 @@ source $ZSH/oh-my-zsh.sh
 # Map history search onto cursor keys
 bindkey "\e[A" history-search-backward
 bindkey "\e[B" history-search-forward
+
+# Provide emacs like binding for searching
+bindkey "^r" history-incremental-search-backward
+bindkey "^s" history-incremental-search-forward
