@@ -2,7 +2,7 @@
 # http://github.com/mitsuhiko/dotfiles/blob/master/Makefile
 # found in https://github.com/sanitz/dotfiles/blob/master/Makefile
 
-install: install-vim install-git install-bash
+install: install-vim install-git install-bash install-zsh
 
 install-vim:
 	rm -rf ~/.vim ~/.vimrc
@@ -19,3 +19,8 @@ install-bash:
 	ln -s `pwd`/bashrc ~/.bashrc
 	ln -s `pwd`/bash_aliases ~/.bash_aliases
 	ln -s `pwd`/inputrc ~/.inputrc
+
+install-zsh:
+	rm -rf ~/.zshrc ~/.oh-my-zsh
+	ln -s `pwd`/zshrc ~/.zshrc
+	ln -s `pwd`/oh-my-zsh ~/.oh-my-zsh
