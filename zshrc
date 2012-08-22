@@ -45,3 +45,15 @@ bindkey "^S" history-incremental-pattern-search-forward
 
 # Use command not found
 . /etc/zsh_command_not_found
+
+# tell remote hosts to use byobu, if available
+export LC_TERMTYPE=byobu
+
+# SVN should use vi for editing messages to
+export SVN_EDITOR=vim
+
+# my default editor is vi
+export EDITOR=vim
+
+# always use english language
+export LANG=en_GB.UTF-8
