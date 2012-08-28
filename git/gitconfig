@@ -27,3 +27,6 @@
     graph = log --graph --decorate --oneline
     who = shortlog -s --
     wdf = diff --color-words
+[url "ssh://git@github.com/"]
+    insteadOf = gh:
+    insteadOf = gh:~
