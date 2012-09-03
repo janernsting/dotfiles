@@ -8,8 +8,8 @@ call pathogen#infect()
 call pathogen#helptags()
 
 " place backup files in folders dedicated to temporary files
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " tell vim to use a dark background
 set background=dark
