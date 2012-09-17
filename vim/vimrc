@@ -14,7 +14,7 @@ set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " tell vim to use a dark background
 set background=dark
 
-" 4 spaces per tabstop
+" tabstop settings
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
