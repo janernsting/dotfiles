@@ -46,8 +46,8 @@ set number
 " remap escape (eliminates reaching for escape key)
 inoremap jj <ESC>
 
-" Leader key on comma
-let mapleader = ','
+" Leader key on space bar
+let mapleader = ' '
 
 " show commands
 set showcmd
