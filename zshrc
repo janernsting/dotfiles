@@ -60,3 +60,6 @@ export LANG=en_GB.UTF-8
 
 # chrome caches to tmpfs
 alias google-chrome='google-chrome --disk-cache-dir="/tmp/google-chrome/"'
+
+# stop zsh from automatically updating titles
+DISABLE_AUTO_TITLE=true
