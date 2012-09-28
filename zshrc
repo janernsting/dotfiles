@@ -5,7 +5,11 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# this version of agnoster is downloaded from: https://gist.github.com/3712874
+ZSH_THEME="agnoster"
+
+# set default user for agnoster theme
+DEFAULT_USER="jan"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
