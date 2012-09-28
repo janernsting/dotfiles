@@ -67,3 +67,6 @@ alias google-chrome='google-chrome --disk-cache-dir="/tmp/google-chrome/"'
 
 # stop zsh from automatically updating titles
 DISABLE_AUTO_TITLE=true
+
+# set TERM variable to support vim-powerline
+export TERM="xterm-256color"
