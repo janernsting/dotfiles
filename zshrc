@@ -33,15 +33,11 @@ DEFAULT_USER="jan"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vi-mode)
+plugins=(vi-mode history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-#
-# Map history search onto cursor keys
-bindkey "\e[A" history-search-backward
-bindkey "\e[B" history-search-forward
 
 # Provide emacs like binding for searching
 bindkey "^R" history-incremental-pattern-search-backward
