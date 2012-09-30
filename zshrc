@@ -25,7 +25,7 @@ DEFAULT_USER="jan"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -57,9 +57,6 @@ export LANG=en_GB.UTF-8
 
 # chrome caches to tmpfs
 alias google-chrome='google-chrome --disk-cache-dir="/tmp/google-chrome/"'
-
-# stop zsh from automatically updating titles
-DISABLE_AUTO_TITLE=true
 
 # set TERM variable to support vim-powerline
 export TERM="xterm-256color"
