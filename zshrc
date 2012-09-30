@@ -33,7 +33,7 @@ DEFAULT_USER="jan"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vi-mode history-substring-search)
+plugins=(vi-mode history-substring-search command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -42,9 +42,6 @@ source $ZSH/oh-my-zsh.sh
 # Provide emacs like binding for searching
 bindkey "^R" history-incremental-pattern-search-backward
 bindkey "^S" history-incremental-pattern-search-forward
-
-# Use command not found
-. /etc/zsh_command_not_found
 
 # tell remote hosts to use byobu, if available
 export LC_TERMTYPE=byobu
