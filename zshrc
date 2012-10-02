@@ -59,4 +59,4 @@ export LANG=en_GB.UTF-8
 alias google-chrome='google-chrome --disk-cache-dir="/tmp/google-chrome/"'
 
 # set TERM variable to support vim-powerline
-export TERM="xterm-256color"
+export TERM="screen-256color"
