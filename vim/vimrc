@@ -11,8 +11,13 @@ call pathogen#helptags()
 set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-" tell vim to use a dark background
+" syntax highlighting
+syntax enable
+
+" colorscheme
 set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " tabstop settings
 set tabstop=2
