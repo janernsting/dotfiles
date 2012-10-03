@@ -76,9 +76,6 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 " Python syntax
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
-" display Python PEP8 violations in quickview
-let g:pep8_map='<leader>8'
-
 " NERDTree toggling
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 
