@@ -76,6 +76,9 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 " Python syntax
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
+" flake8 integration
+autocmd FileType python map <buffer> <leader>f :call Flake8()<CR>
+
 " NERDTree toggling
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 
