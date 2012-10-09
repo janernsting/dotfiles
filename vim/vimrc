@@ -85,6 +85,9 @@ nmap <silent> <leader>n :NERDTreeToggle<CR>
 " Gundo toggling
 nmap <silent> <leader>g :GundoToggle<CR>
 
+" ZoomWin toggling
+nnoremap <silent> <leader><leader> :ZoomWin<CR>
+
 " Gitv should automatically decide where to place preview
 let g:Gitv_OpenHorizontal = "auto"
 

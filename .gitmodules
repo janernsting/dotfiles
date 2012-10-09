@@ -28,3 +28,6 @@
 [submodule "vim/bundle/flake8"]
 	path = vim/bundle/flake8
 	url = git://github.com/nvie/vim-flake8.git
+[submodule "vim/bundle/zoom-win"]
+	path = vim/bundle/zoom-win
+	url = git://github.com/vim-scripts/ZoomWin.git
