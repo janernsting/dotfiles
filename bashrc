@@ -117,4 +117,4 @@ export GIT_PS1_SHOWSTASHSTATE=enabled
 export PS1='\[\033[0;35m\]\u@\h:\[\033[0m\]\[\033[1m\]\w\[\033[0m\]$(__git_ps1 "\[\033[0;33m\][%s]\[\033[0m\]")\[\033[0;35m\]$\[\033[0m\] '
 
 # set TERM variable to support vim-powerline
-export TERM="xterm-256color"
+export TERM="screen-256color"
