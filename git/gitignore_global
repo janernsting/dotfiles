@@ -33,6 +33,9 @@ local.properties
 # PDT-specific
 .buildpath
 
+# Python bytecode
+*.pyc
+
 # Archive files #
 #################
 # It's better to unpack these files and commit the raw source because
