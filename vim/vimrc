@@ -78,6 +78,7 @@ autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
 " flake8 integration
 autocmd FileType python map <buffer> <leader>f :call Flake8()<CR>
+autocmd BufNewFile,BufRead *.py compiler nose
 
 " NERDTree toggling
 nmap <silent> <leader>n :NERDTreeToggle<CR>
@@ -103,7 +104,6 @@ let generate_tags=1
 let Tlist_Use_Horiz_Window=0
 " Shorter commands to toggle Taglist display
 nnoremap TT :TlistToggle<CR>
-nmap <silent> <leader>t :TlistToggle<CR>
 " Various Taglist diplay config:
 let Tlist_Compact_Format = 1
 let Tlist_Exit_OnlyWindow = 1           " exit if taglist is last window open

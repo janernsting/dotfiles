@@ -31,3 +31,9 @@
 [submodule "vim/bundle/zoom-win"]
 	path = vim/bundle/zoom-win
 	url = git://github.com/vim-scripts/ZoomWin.git
+[submodule "vim/bundle/nosecompiler"]
+	path = vim/bundle/nosecompiler
+	url = git://github.com/olethanh/Vim-nosecompiler.git
+[submodule "vim/bundle/makegreen"]
+	path = vim/bundle/makegreen
+	url = git://github.com/reinh/vim-makegreen.git
