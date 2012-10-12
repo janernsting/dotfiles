@@ -40,6 +40,7 @@ set nomousefocus
 set mousehide
 
 " For vim-powerline theme
+set laststatus=2
 let g:Powerline_symbols = 'fancy'
 
 " Remember more commands and search history
@@ -59,10 +60,6 @@ let mapleader = ' '
 
 " show commands
 set showcmd
-
-" always show current filename and its status
-set laststatus=2
-set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " display at least three lines when scrolling
 set scrolloff=3
