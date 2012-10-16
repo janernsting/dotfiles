@@ -39,6 +39,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# ignore some files during completion
+zstyle ':completion:*:(all-|)files' ignored-patterns "(*.pyc|*~|*.class|*.aux|*.auxlock|*.log|*.nav|*.out|*.snm|*.toc)"
+# but not for these programs
+zstyle ':completion:*:ls:*:(all-|)files' ignored-patterns
+zstyle ':completion:*:rm:*:(all-|)files' ignored-patterns
+
 # Provide emacs like binding for searching
 bindkey "^R" history-incremental-pattern-search-backward
 bindkey "^S" history-incremental-pattern-search-forward
