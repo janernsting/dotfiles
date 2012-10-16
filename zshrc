@@ -41,6 +41,8 @@ source $ZSH/oh-my-zsh.sh
 
 # ignore some files during completion
 zstyle ':completion:*:(all-|)files' ignored-patterns "(*.pyc|*~|*.class|*.aux|*.auxlock|*.log|*.nav|*.out|*.snm|*.toc)"
+# ignore pdf files for vi
+zstyle ':completion:*:vi:*:(all-|)files' ignored-patterns "(*.pdf|*.pyc|*~|*.class|*.aux|*.auxlock|*.log|*.nav|*.out|*.snm|*.toc)"
 # but not for these programs
 zstyle ':completion:*:ls:*:(all-|)files' ignored-patterns
 zstyle ':completion:*:rm:*:(all-|)files' ignored-patterns
