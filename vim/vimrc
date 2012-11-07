@@ -135,6 +135,10 @@ let tlist_bib_settings   = 'bib;a:BibTeX-Authors;e:BibTeX-Entries;t:BibTeX-Title
 let tlist_make_settings  = 'make;m:makros;t:targets'
 let tlist_tex_settings   = 'latex;s:Contents;g:Graphics;i:Listings;l:\label;r:\ref;p:\pageref;b:\bibitem'
 
+" Syntastic settings
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+
 " quick editing of .vimrc (from sanitz)
 nnoremap <silent> <leader>e :e! ~/.vimrc<cr>
 nnoremap <silent> <leader>s :source ~/.vimrc<cr>
