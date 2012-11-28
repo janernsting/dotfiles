@@ -37,6 +37,3 @@
 [submodule "vim/bundle/makegreen"]
 	path = vim/bundle/makegreen
 	url = git://github.com/reinh/vim-makegreen.git
-[submodule "vim/bundle/syntastic"]
-	path = vim/bundle/syntastic
-	url = git://github.com/scrooloose/syntastic
