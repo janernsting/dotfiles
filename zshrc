@@ -68,3 +68,6 @@ alias google-chrome='google-chrome --disk-cache-dir="/tmp/google-chrome/"'
 
 # set TERM variable to support vim-powerline
 export TERM="screen-256color"
+
+# ignore duplicate history entries
+export HISTCONTROL=erasedups
