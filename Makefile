@@ -21,9 +21,10 @@ install-bash:
 	ln -s `pwd`/inputrc ~/.inputrc
 
 install-zsh:
-	rm -rf ~/.zshrc ~/.oh-my-zsh
+	rm -rf ~/.zshrc ~/.oh-my-zsh ~/.zsh
 	ln -s `pwd`/zshrc ~/.zshrc
 	ln -s `pwd`/oh-my-zsh ~/.oh-my-zsh
+	ln -s `pwd`/zsh ~/.zsh
 
 install-nose:
 	rm -rf ~/.noserc

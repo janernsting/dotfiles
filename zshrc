@@ -39,6 +39,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# load custom functions
+for function in ~/.zsh/functions/*; do
+  source $function
+done
+
 # ignore some files during completion
 zstyle ':completion:*:(all-|)files' ignored-patterns "(*.pyc|*~|*.class|*.aux|*.auxlock|*.log|*.nav|*.out|*.snm|*.toc)"
 # ignore pdf files for vi
