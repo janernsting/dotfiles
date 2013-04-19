@@ -27,6 +27,7 @@
   graph = log --graph --decorate --oneline
   who = shortlog -s --
   wdf = diff --color-words
+  serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
 [url "ssh://git@github.com/"]
   insteadOf = gh:
   insteadOf = gh:~
