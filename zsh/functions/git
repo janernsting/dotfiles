@@ -1,6 +1,15 @@
-# Aliases
-alias g='git'
+# No arguments: `git status`
+# With arguments: acts like `git`
+g() {
+  # Taken from thoughtbot/dotfiles
+  if [[ $# > 0 ]]; then
+    git $@
+  else
+    git status
+  fi
+}
 compdef g=git
+
 alias gst='git status'
 compdef _git gst=git-status
 alias gl='git pull'
