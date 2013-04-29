@@ -74,10 +74,7 @@ cmap w!! w !sudo tee >/dev/null %
 " Toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
-" Python syntax
-autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
-
-" flake8 integration
+" flake8 integration for python
 autocmd FileType python map <buffer> <leader>f :call Flake8()<CR>
 autocmd BufNewFile,BufRead *.py compiler nose
 
