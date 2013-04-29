@@ -71,9 +71,6 @@ set scrolloff=3
 " allow to save files with root permissions
 cmap w!! w !sudo tee >/dev/null %
 
-" Toggle line numbers and fold column for easy copying:
-nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
-
 " flake8 integration for python
 autocmd FileType python map <buffer> <leader>f :call Flake8()<CR>
 autocmd BufNewFile,BufRead *.py compiler nose
