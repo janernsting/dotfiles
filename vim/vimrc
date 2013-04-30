@@ -103,6 +103,7 @@ let Tlist_Show_One_File = 1             " only show tags for current buffer
 let Tlist_Enable_Fold_Column = 0        " no fold column (only showing one file)
 let Tlist_GainFocus_On_ToggleOpen = 1   " automatically gain focus
 let Tlist_File_Fold_Auto_Close = 1
+let Tlist_Inc_Winwidth = 0
 
 " LaTeX suite
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
