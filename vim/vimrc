@@ -56,6 +56,11 @@ set wildignore=*.pyc,*.class
 " Turn on line numbers
 set number
 
+" Open split panes below or to the right (see
+" https://github.com/thoughtbot/dotfiles/)
+set splitbelow
+set splitright
+
 " remap escape (eliminates reaching for escape key)
 inoremap jj <ESC>
 
