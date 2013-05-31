@@ -74,6 +74,9 @@ export LANG=en_GB.UTF-8
 # chrome caches to tmpfs
 alias google-chrome='google-chrome --disk-cache-dir="/tmp/google-chrome/"'
 
+# do not autocorrect the following commands
+alias lg='nocorrect git lg'
+
 # set TERM variable to support vim-powerline
 export TERM="screen-256color"
 
