@@ -7,6 +7,9 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
+" use powerline status bar
+set rtp+=~/.vim/bundle/vim-powerline/powerline/bindings/vim
+
 " place backup files in folders dedicated to temporary files
 set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
