@@ -118,3 +118,4 @@ export PS1='\[\033[0;35m\]\u@\h:\[\033[0m\]\[\033[1m\]\w\[\033[0m\]$(__git_ps1 "
 
 # set TERM variable to support vim-powerline
 export TERM="screen-256color"
+[ -r /home/jan/.byobu/prompt ] && . /home/jan/.byobu/prompt   #byobu-prompt#
