@@ -8,6 +8,9 @@ ZSH=$HOME/.oh-my-zsh
 # this version of agnoster is downloaded from: https://gist.github.com/3712874
 ZSH_THEME="agnoster"
 
+# set default user for agnoster theme
+DEFAULT_USER="jan"
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
