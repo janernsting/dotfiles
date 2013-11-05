@@ -1,0 +1,14 @@
+set from="jan.ernsting@gmail.com"
+set hostname="gmail.com"
+
+set folder="imaps://imap.googlemail.com/"
+set spoolfile="+INBOX"
+set postponed="+[Gmail]/Entwürfe"
+set record=""
+
+macro index,pager y "<save-message>=[Gmail]/Alle<quote-char> Nachrichten<enter><enter>" "Archive"
+macro index,pager s "<save-message>=[Gmail]/Spam<enter><enter>" "Archive"
+
+unset signature
+source ~/.mutt/gpg.rc
+# vim: ft=muttrc

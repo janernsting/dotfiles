@@ -1,0 +1,12 @@
+set smime_is_default="yes"
+set crypt_autosmime="yes"
+set pgp_autosign="no"
+set smime_timeout="300"
+set crypt_autosign="yes"
+set crypt_replyencrypt="yes"
+set crypt_replysign="yes"
+set crypt_replysignencrypted="yes"
+set crypt_verify_sig="yes"
+set smime_default_key="323ae483.0"
+
+# vim: ft=muttrc

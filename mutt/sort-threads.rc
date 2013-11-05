@@ -1,0 +1,2 @@
+set sort=threads
+macro index S "<enter-command>source ~/.mutt/sort-date.rc<enter>"

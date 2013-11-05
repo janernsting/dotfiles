@@ -2,12 +2,18 @@
 # http://github.com/mitsuhiko/dotfiles/blob/master/Makefile
 # found in https://github.com/sanitz/dotfiles/blob/master/Makefile
 
-install: install-vim install-git install-bash install-zsh
+install: install-vim install-mutt install-git install-bash install-zsh
 
 install-vim:
 	rm -rf ~/.vim ~/.vimrc
 	ln -s `pwd`/vim ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
+
+install-mutt:
+	rm -rf ~/.mutt ~/.muttrc ~/.msmtprc
+	ln -s `pwd`/mutt ~/.mutt
+	ln -s ~/.mutt/muttrc ~/.muttrc
+	ln -s ~/.mutt/msmtprc ~/.msmtprc
 
 install-git:
 	rm -rf ~/.gitconfig ~/.gitignore_global

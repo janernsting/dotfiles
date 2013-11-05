@@ -1,0 +1,8 @@
+set pgp_good_sign="^gpg: Good signature from"
+set crypt_autosign="yes"
+set crypt_replysign="yes"
+set crypt_replysignencrypted="yes"
+set pgp_auto_decode="yes"
+unset smime_is_default
+
+# vim: ft=muttrc
