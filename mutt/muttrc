@@ -46,6 +46,7 @@ set index_format="%4C %Z %D %-22.22F (%?l?%4l&%4c?) %s" #Format der Mail-Übersi
 set folder_format="%2C %8s %d %t %N %f"     #Format des Datei-Browsers
 set pager_index_lines=10                    #Anzahl der angezeigten Mails in der Übersicht
 set pager_context=5
+set pager_stop=yes
 
 #Editor, der zum Verfassen der E-Mail benutzt wird, hier Vim mit Zeilenumbruch bei 70 Zeichen
 set editor="vim -c 'set tw=70 et' -c 'set wrap' '+/^$'"
