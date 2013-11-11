@@ -38,6 +38,7 @@ set sort_aux=date-sent
 
 set print=no
 set quit=ask-no
+set include=yes
 
 set charset="utf-8"
 set date_format="%a, %d. %b %H:%M"          #gibt an, wie das Datum formatiert wird
