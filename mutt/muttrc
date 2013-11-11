@@ -25,8 +25,9 @@ set edit_hdrs                               #Empfänger u.a. auch im Editor bear
 set fast_reply
 set realname="Jan Ernsting"
 
-set alias_file="~/.mutt/aliases"
-source ~/.mutt/aliases
+set query_command="goobook query '%s'"
+bind editor <Tab> complete-query
+macro index,pager a "<pipe-message>;goobook add<return>" "Add sender's address to your Google contacts"
 
 auto_view text/html
 alternative_order text/plain text/html

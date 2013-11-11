@@ -10,10 +10,11 @@ install-vim:
 	ln -s ~/.vim/vimrc ~/.vimrc
 
 install-mutt:
-	rm -rf ~/.mutt ~/.muttrc ~/.msmtprc
+	rm -rf ~/.mutt ~/.muttrc ~/.msmtprc ~/.goobookrc
 	ln -s `pwd`/mutt ~/.mutt
 	ln -s ~/.mutt/muttrc ~/.muttrc
 	ln -s ~/.mutt/msmtprc ~/.msmtprc
+	ln -s ~/.mutt/goobookrc ~/.goobookrc
 
 install-git:
 	rm -rf ~/.gitconfig ~/.gitignore_global
