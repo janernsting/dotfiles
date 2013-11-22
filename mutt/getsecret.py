@@ -7,7 +7,7 @@ def get_secret(display_name, keyring_name = "login"):
   for id in gnomekeyring.list_item_ids_sync(keyring_name):
     item = gnomekeyring.item_get_info_sync(keyring_name, id)
     if display_name == item.get_display_name():
-      print item.get_secret(),
+      return item.get_secret()
 
 def display_usage():
   print "Usage:"
@@ -19,4 +19,4 @@ if __name__ == '__main__':
     sys.exit(1)
 
   display_name = sys.argv[1]
-  get_secret(display_name)
+  print get_secret(display_name)
