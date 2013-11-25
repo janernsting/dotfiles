@@ -28,8 +28,7 @@
 	url = https://github.com/nvie/vim-flake8.git
 [submodule "vim/bundle/zoom-win"]
 	path = vim/bundle/zoom-win
-	url = https://github.com/vim-scripts/ZoomWin.git
-	ignore = dirty
+	url = https://github.com/dr-chip-vim-scripts/ZoomWin.git
 [submodule "vim/bundle/nosecompiler"]
 	path = vim/bundle/nosecompiler
 	url = https://github.com/olethanh/Vim-nosecompiler.git
