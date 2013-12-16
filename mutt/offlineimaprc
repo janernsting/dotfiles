@@ -1,0 +1,73 @@
+[general]
+# General information.  See the fully annotated example more information
+# https://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf
+
+metadata = ~/.offlineimap
+accounts = wi, gmail
+maxsyncaccounts = 2
+socktimeout = 60
+ui = Curses.Blinkenlights, TTY.TTYUI
+
+# This helper file lets you use gnome-keyring to store usernames / passwords
+pythonfile = ~/.mutt/getsecret.py
+
+[Account wi]
+localrepository = local-wi
+remoterepository = remote-wi
+
+[Account gmail]
+localrepository = local-gmail
+remoterepository = remote-gmail
+
+[Repository local-wi]
+type = Maildir
+localfolders = ~/.mail/wi
+
+# Translate names from local names to remote names:
+# This one does:
+# 1. Changes any underscores to spaces
+nametrans = lambda foldername: re.sub ('_', ' ', foldername)
+
+[Repository remote-wi]
+type = IMAP
+maxconnections = 2
+remotehost = localhost
+remoteport = 1143
+remoteuser = "WI\\jaer01"
+remotepasseval = get_secret("wi-pw")
+realdelete = yes
+
+# Translate remote names to local names:
+# This one does:
+# 1. Replaces spaces with underscores
+nametrans = lambda foldername: re.sub (' ', '_', foldername)
+
+[Repository local-gmail]
+type = Maildir
+localfolders = ~/.mail/gmail
+# Note the nametrans below in remote-gmail: it undoes this one
+nametrans = lambda foldername: re.sub ('Alle Nachrichten', '[Gmail].Alle Nachrichten',
+                               re.sub ('Entwuerfe', '[Gmail].Entw&APw-rfe',
+                               re.sub ('Gesendet', '[Gmail].Gesendet',
+                               re.sub ('Markiert', '[Gmail].Markiert',
+                               re.sub ('Spam', '[Gmail].Spam',
+                               re.sub ('_', ' ', foldername))))))
+
+[Repository remote-gmail]
+type = Gmail
+maxconnections = 2
+remoteusereval = "jan.ernsting@gmail.com"
+remotepasseval = get_secret("gmail-pw")
+
+trashfolder = [Gmail]/Papierkorb
+spamfolder = [Gmail]/Spam
+
+# If using ssl, you will need to specify certificates to use with them
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+realdelete = no
+# Note the nametrans above in local-gmail: it undoes this one
+nametrans = lambda foldername: re.sub ('^\[Gmail\]\/', '',
+                               re.sub ('Entw&APw-rfe', 'Entwuerfe',
+                               re.sub (' ', '_', foldername)))
