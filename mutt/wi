@@ -5,7 +5,7 @@ set spoolfile= +"wi/INBOX"
 set postponed= +"wi/Drafts"
 set record=""
 
-macro index,pager y "<save-message>+wi/INBOX.Archiv.2013<enter><enter>" "Archive"
+macro index,pager y "<save-message>+wi/INBOX.Archiv.2014<enter><enter>" "Archive"
 macro index,pager s "<save-message>+wi/Junk-E-Mail<enter><enter>" "Archive"
 
 set signature="~/.mutt/wi-signature"
