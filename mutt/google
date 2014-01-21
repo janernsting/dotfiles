@@ -6,7 +6,6 @@ set postponed=+"gmail/Entw&APw-rfe"
 set record=""
 
 macro index,pager y "<save-message>+gmail/Alle_Nachrichten<enter><enter>" "Archive"
-macro index,pager s "<save-message>+gmail/Spam<enter><enter>" "Archive"
 
 unset signature
 source ~/.mutt/gpg.rc
