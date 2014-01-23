@@ -14,10 +14,12 @@ pythonfile = ~/.mutt/getsecret.py
 [Account wi]
 localrepository = local-wi
 remoterepository = remote-wi
+status_backend = sqlite
 
 [Account gmail]
 localrepository = local-gmail
 remoterepository = remote-gmail
+status_backend = sqlite
 
 [Repository local-wi]
 type = Maildir
