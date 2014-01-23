@@ -7,7 +7,6 @@ folder-hook +gmail/.* 'source ~/.mutt/google'
 
 macro index <esc>1 "<change-folder>~/.mail/gmail/INBOX<enter>"
 macro index <esc>2 "<change-folder>~/.mail/wi/INBOX<enter>"
-macro index t "c=<tab><tab><tab>"            #drücke t, um in den Ordnern des Postfaches zu navigieren
 
 source ~/.mutt/colors-solarized-dark-256.muttrc
 
