@@ -57,7 +57,7 @@ nametrans = lambda foldername: re.sub ('Alle Nachrichten', '[Gmail].Alle Nachric
 
 [Repository remote-gmail]
 type = Gmail
-maxconnections = 2
+maxconnections = 1
 remoteusereval = "jan.ernsting@gmail.com"
 remotepasseval = get_secret("gmail-pw")
 
