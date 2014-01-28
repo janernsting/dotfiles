@@ -43,9 +43,6 @@ set mousehide
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
-" keep buffers open
-set hidden
-
 " automatically reload files
 set autoread
 
