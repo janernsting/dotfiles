@@ -35,8 +35,6 @@ set hlsearch
 set incsearch
 
 set mouse=nvc " allow mouse in normal, visual, and command-line mode only (see help mouse)
-set nomousefocus
-set mousehide
 
 " For vim-powerline theme
 set laststatus=2
