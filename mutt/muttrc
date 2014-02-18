@@ -14,6 +14,7 @@ set sendmail="/usr/bin/msmtp"               #Pfad zu dem Programm, das die Mails
 set envelope_from=yes                       #übergibt msmtp automatisch den richtigen Absender
 set edit_hdrs                               #Empfänger u.a. auch im Editor bearbeiten
 set fast_reply
+set mime_forward                            #when forwarding messages attach them
 set realname="Jan Ernsting"
 
 set query_command="goobook query '%s'"
