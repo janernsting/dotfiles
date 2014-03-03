@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # this version of agnoster is downloaded from: https://gist.github.com/3712874
-ZSH_THEME="agnoster"
+ZSH_THEME="custom-agnoster"
 
 # set default user for agnoster theme
 DEFAULT_USER="jan"
@@ -44,8 +44,8 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
-# Use powerline zsh style
-# source ~/.vim/bundle/vim-powerline/powerline/bindings/zsh/powerline.zsh
+# vi command mode indicator
+MODE_INDICATOR="%{%F{red}%}⌘"
 
 # ignore some files during completion
 zstyle ':completion:*:(all-|)files' ignored-patterns "(*.pyc|*~|*.class|*.aux|*.auxlock|*.log|*.nav|*.out|*.snm|*.toc)"
