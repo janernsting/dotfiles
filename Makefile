@@ -28,3 +28,4 @@ install-zsh:
 	ln -s `pwd`/oh-my-zsh ~/.oh-my-zsh
 	ln -s `pwd`/zsh ~/.zsh
 	ln -s `pwd`/zprofile ~/.zprofile
+	ln -s `pwd`/zsh/custom/* `pwd`/oh-my-zsh/custom/ # install custom plugins
