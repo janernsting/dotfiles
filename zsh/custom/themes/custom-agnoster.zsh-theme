@@ -22,6 +22,9 @@
 # jobs are running in this shell will all be displayed automatically when
 # appropriate.
 
+# vi command mode indicator (used by vi-mode plugin)
+MODE_INDICATOR="%{%F{red}%}⌘"
+
 ### Segment drawing
 # A few utility functions to make it easy and re-usable to draw segmented prompts
 
