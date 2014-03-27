@@ -34,7 +34,8 @@ set smartcase
 set hlsearch
 set incsearch
 
-set mouse=nvc " allow mouse in normal, visual, and command-line mode only (see help mouse)
+set mouse=nc " allow mouse in normal and command-line mode only (see help mouse)
+" visual mode mouse support triggered random E315
 
 " For vim-powerline theme
 set laststatus=2
