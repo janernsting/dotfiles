@@ -27,6 +27,9 @@ class RemoteToLocalTest(unittest.TestCase):
   def testConvertSpacesToUnderscores(self):
     self.assert_converts_to('INBOX/EAI 2013', 'EAI_2013')
 
+  def testTranslateJunkEMailToSpam(self):
+    self.assert_converts_to('Junk-E-Mail', 'spam')
+
 
 class LocalToRemoteTest(unittest.TestCase):
   def convert(self, folder):
@@ -52,14 +55,14 @@ class LocalToRemoteTest(unittest.TestCase):
   def testPrefixInboxOnlyIfAbsent(self):
     self.assert_converts_to('INBOX/MD2', 'INBOX/MD2')
 
+  def testTranslateSpamToJunkEMail(self):
+    self.assert_converts_to('spam', 'Junk-E-Mail')
+
 
 class FolderfilterTest(unittest.TestCase):
   def testExcludeSyncProblems(self):
     assert_that(not funcs.filter_folder('Synchronisierungsprobleme'))
     assert_that(not funcs.filter_folder('Synchronisierungsprobleme.Konflikte'))
-
-  def testExcludeJunkEMail(self):
-    assert_that(not funcs.filter_folder('Junk-E-Mail'))
 
   def testExcludePostausgang(self):
     assert_that(not funcs.filter_folder('Postausgang'))

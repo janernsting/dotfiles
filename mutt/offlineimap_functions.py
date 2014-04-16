@@ -8,11 +8,14 @@ def get_secret(display_name, keyring_name = "login"):
     if display_name == item.get_display_name():
       return item.get_secret()
 
-top_level_folders = ['Drafts', 'Sent', 'Trash']
+top_level_folders = ['Drafts', 'Sent', 'Trash', 'Junk-E-Mail', ]
+translation = { 'Junk-E-Mail': 'spam', }
+inverse_translation = {v:k for k, v in translation.items()}
 
 def convert_to_local(folder):
   folder = re.sub('INBOX\/', '', folder)
   folder = re.sub(' ', '_', folder)
+  folder = translation.get(folder, folder)
   folder = first_to_lower(folder) if folder in top_level_folders else folder
   return folder
 
@@ -21,6 +24,7 @@ def first_to_lower(s):
 
 def convert_to_remote(folder):
   folder = first_to_upper(folder) if first_to_upper(folder) in top_level_folders else folder
+  folder = inverse_translation.get(folder, folder)
   folder = re.sub('_', ' ', folder)
   folder = "INBOX/" + folder if folder not in top_level_folders \
       and not folder.startswith('INBOX') else folder
@@ -31,4 +35,4 @@ def first_to_upper(s):
 
 def filter_folder(folder):
   return not folder.startswith('Synchronisierungsprobleme') \
-      and folder not in ['Junk-E-Mail', 'Postausgang']
+      and folder not in ['Postausgang', ]
