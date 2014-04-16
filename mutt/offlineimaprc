@@ -28,7 +28,7 @@ localfolders = ~/.mail/wi
 # Translate names from local names to remote names:
 # This one does:
 # 1. Changes any underscores to spaces
-nametrans = lambda foldername: re.sub ('_', ' ', foldername)
+nametrans = convert_to_remote
 
 [Repository remote-wi]
 type = IMAP
@@ -42,7 +42,8 @@ realdelete = yes
 # Translate remote names to local names:
 # This one does:
 # 1. Replaces spaces with underscores
-nametrans = lambda foldername: re.sub (' ', '_', foldername)
+nametrans = convert_to_local
+folderfilter = filter_folder
 
 [Repository local-gmail]
 type = Maildir
