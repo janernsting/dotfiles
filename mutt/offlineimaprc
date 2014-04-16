@@ -24,10 +24,6 @@ status_backend = sqlite
 [Repository local-wi]
 type = Maildir
 localfolders = ~/.mail/wi
-
-# Translate names from local names to remote names:
-# This one does:
-# 1. Changes any underscores to spaces
 nametrans = convert_to_remote
 
 [Repository remote-wi]
@@ -39,16 +35,13 @@ remoteuser = "WI\\jaer01"
 remotepasseval = get_secret("wi-pw")
 realdelete = yes
 
-# Translate remote names to local names:
-# This one does:
-# 1. Replaces spaces with underscores
 nametrans = convert_to_local
 folderfilter = filter_folder
 
 [Repository local-gmail]
 type = Maildir
 localfolders = ~/.mail/gmail
-# Note the nametrans below in remote-gmail: it undoes this one
+
 nametrans = lambda folder: {
                              'drafts': '[Gmail]/Entw&APw-rfe',
                              'sent': '[Gmail]/Gesendet',
@@ -69,7 +62,7 @@ ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 
 realdelete = no
-# Note the nametrans above in local-gmail: it undoes this one
+
 nametrans = lambda folder: {
                              '[Gmail]/Entw&APw-rfe': 'drafts',
                              '[Gmail]/Gesendet': 'sent',
