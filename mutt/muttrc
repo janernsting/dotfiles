@@ -15,6 +15,7 @@ set envelope_from=yes                       #übergibt msmtp automatisch den ric
 set edit_hdrs                               #Empfänger u.a. auch im Editor bearbeiten
 set fast_reply
 set mime_forward                            #when forwarding messages attach them
+set forward_format = "Fwd: %s"
 set realname="Jan Ernsting"
 
 set query_command="goobook query '%s'"
