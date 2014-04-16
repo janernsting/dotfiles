@@ -9,7 +9,7 @@ socktimeout = 60
 ui = Curses.Blinkenlights, TTY.TTYUI
 
 # This helper file lets you use gnome-keyring to store usernames / passwords
-pythonfile = ~/.mutt/getsecret.py
+pythonfile = ~/.mutt/offlineimap_functions.py
 
 [Account wi]
 localrepository = local-wi
