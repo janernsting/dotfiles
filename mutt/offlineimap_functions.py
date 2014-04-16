@@ -22,7 +22,8 @@ def first_to_lower(s):
 def convert_to_remote(folder):
   folder = first_to_upper(folder) if first_to_upper(folder) in top_level_folders else folder
   folder = re.sub('_', ' ', folder)
-  folder = "INBOX/" + folder if folder not in top_level_folders else folder
+  folder = "INBOX/" + folder if folder not in top_level_folders \
+      and not folder.startswith('INBOX') else folder
   return folder
 
 def first_to_upper(s):

@@ -35,6 +35,9 @@ class LocalToRemoteTest(unittest.TestCase):
   def assert_converts_to(self, actual_folder, expected_folder):
     assert_that(self.convert(actual_folder), equal_to(expected_folder))
 
+  def testInboxRemainsUnchanged(self):
+    self.assert_converts_to('INBOX', 'INBOX')
+
   def testChangeCaseForTopLevelFolders(self):
     self.assert_converts_to('drafts', 'Drafts')
     self.assert_converts_to('sent', 'Sent')
@@ -45,6 +48,9 @@ class LocalToRemoteTest(unittest.TestCase):
 
   def testConvertUnderscoresToSpaces(self):
     self.assert_converts_to('EAI_2013', 'INBOX/EAI 2013')
+
+  def testPrefixInboxOnlyIfAbsent(self):
+    self.assert_converts_to('INBOX/MD2', 'INBOX/MD2')
 
 
 class FolderfilterTest(unittest.TestCase):
