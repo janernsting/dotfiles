@@ -54,6 +54,7 @@ nametrans = lambda folder: {
                              'flagged': '[Gmail]/Markiert',
                              'trash': '[Gmail]/Papierkorb',
                              'archive': '[Gmail]/Alle Nachrichten',
+                             'spam': '[Gmail]/Spam',
                            }.get(folder, folder)
 
 [Repository remote-gmail]
@@ -74,7 +75,5 @@ nametrans = lambda folder: {
                              '[Gmail]/Markiert': 'flagged',
                              '[Gmail]/Papierkorb': 'trash',
                              '[Gmail]/Alle Nachrichten': 'archive',
+                             '[Gmail]/Spam': 'spam',
                            }.get(folder, folder)
-folderfilter = lambda folder: folder not in [
-                                              '[Gmail]/Spam',
-                                            ]
