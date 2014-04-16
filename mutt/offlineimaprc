@@ -48,12 +48,13 @@ nametrans = lambda foldername: re.sub (' ', '_', foldername)
 type = Maildir
 localfolders = ~/.mail/gmail
 # Note the nametrans below in remote-gmail: it undoes this one
-nametrans = lambda foldername: re.sub ('Alle Nachrichten', '[Gmail].Alle Nachrichten',
-                               re.sub ('Entwuerfe', '[Gmail].Entw&APw-rfe',
-                               re.sub ('Gesendet', '[Gmail].Gesendet',
-                               re.sub ('Markiert', '[Gmail].Markiert',
-                               re.sub ('Spam', '[Gmail].Spam',
-                               re.sub ('_', ' ', foldername))))))
+nametrans = lambda folder: {
+                             'drafts': '[Gmail]/Entw&APw-rfe',
+                             'sent': '[Gmail]/Gesendet',
+                             'flagged': '[Gmail]/Markiert',
+                             'trash': '[Gmail]/Papierkorb',
+                             'archive': '[Gmail]/Alle Nachrichten',
+                           }.get(folder, folder)
 
 [Repository remote-gmail]
 type = Gmail
@@ -61,15 +62,19 @@ maxconnections = 1
 remoteusereval = "jan.ernsting@gmail.com"
 remotepasseval = get_secret("gmail-pw")
 
-trashfolder = [Gmail]/Papierkorb
-spamfolder = [Gmail]/Spam
-
 # If using ssl, you will need to specify certificates to use with them
 ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 
 realdelete = no
 # Note the nametrans above in local-gmail: it undoes this one
-nametrans = lambda foldername: re.sub ('^\[Gmail\]\/', '',
-                               re.sub ('Entw&APw-rfe', 'Entwuerfe',
-                               re.sub (' ', '_', foldername)))
+nametrans = lambda folder: {
+                             '[Gmail]/Entw&APw-rfe': 'drafts',
+                             '[Gmail]/Gesendet': 'sent',
+                             '[Gmail]/Markiert': 'flagged',
+                             '[Gmail]/Papierkorb': 'trash',
+                             '[Gmail]/Alle Nachrichten': 'archive',
+                           }.get(folder, folder)
+folderfilter = lambda folder: folder not in [
+                                              '[Gmail]/Spam',
+                                            ]

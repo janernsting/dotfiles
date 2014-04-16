@@ -2,10 +2,10 @@ set from="jan.ernsting@gmail.com"
 set hostname="gmail.com"
 
 set spoolfile=+"gmail/INBOX"
-set postponed=+"gmail/Entw&APw-rfe"
+set postponed=+"gmail/drafts"
 set record=""
 
-macro index,pager y "<save-message>+gmail/Alle_Nachrichten<enter><enter>" "Archive"
+macro index,pager y "<save-message>+gmail/archive<enter><enter>" "Archive"
 
 unset signature
 source ~/.mutt/gpg.rc
