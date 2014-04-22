@@ -31,6 +31,8 @@ set backspace=indent,eol,start
 set complete-=i
 set smarttab
 
+set nrformats-=octal
+
 " Search is only case-sensitive for upper-case characters
 set ignorecase
 set smartcase
