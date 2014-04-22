@@ -27,6 +27,9 @@ set expandtab
 set shiftround
 
 set autoindent
+set backspace=indent,eol,start
+set complete-=i
+set smarttab
 
 " Search is only case-sensitive for upper-case characters
 set ignorecase
