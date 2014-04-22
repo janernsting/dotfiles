@@ -68,12 +68,6 @@ set number
 set splitbelow
 set splitright
 
-" navigate splits
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
 " remap escape (eliminates reaching for escape key)
 inoremap jj <ESC>
 
