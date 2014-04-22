@@ -24,15 +24,24 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+set shiftround
 
-" Autoindentation is useful, too
 set autoindent
+set backspace=indent,eol,start
+set complete-=i
+set smarttab
+
+set nrformats-=octal
 
 " Search is only case-sensitive for upper-case characters
 set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
 
 set mouse=nc " allow mouse in normal and command-line mode only (see help mouse)
 " visual mode mouse support triggered random E315
@@ -59,12 +68,6 @@ set number
 set splitbelow
 set splitright
 
-" navigate splits
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
 " remap escape (eliminates reaching for escape key)
 inoremap jj <ESC>
 
@@ -74,9 +77,10 @@ let mapleader = ' '
 " show commands
 set showcmd
 
-" display at least three lines when scrolling
 set scrolloff=3
+set sidescrolloff=5
 
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 " allow to save files with root permissions
 cmap w!! w !sudo tee >/dev/null %
 
