@@ -77,8 +77,8 @@ let mapleader = ' '
 " show commands
 set showcmd
 
-" display at least three lines when scrolling
 set scrolloff=3
+set sidescrolloff=5
 
 " allow to save files with root permissions
 cmap w!! w !sudo tee >/dev/null %
