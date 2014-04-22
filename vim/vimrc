@@ -38,6 +38,10 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
 
 set mouse=nc " allow mouse in normal and command-line mode only (see help mouse)
 " visual mode mouse support triggered random E315
