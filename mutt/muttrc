@@ -45,6 +45,7 @@ source ~/.mutt/sort-threads.rc
 set sort_aux=date-sent
 
 set print=no
+unset confirmappend
 set quit=ask-no
 set include=yes
 
