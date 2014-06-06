@@ -145,6 +145,16 @@ let tlist_bib_settings   = 'bib;a:BibTeX-Authors;e:BibTeX-Entries;t:BibTeX-Title
 let tlist_make_settings  = 'make;m:makros;t:targets'
 let tlist_tex_settings   = 'latex;s:Contents;g:Graphics;i:Listings;l:\label;r:\ref;p:\pageref;b:\bibitem'
 
+let g:Tex_IgnoredWarnings =
+  \"Underfull\n".
+  \"Overfull\n".
+  \"specifier changed to\n".
+  \"You have requested\n".
+  \"Missing number, treated as zero.\n".
+  \"There were undefined references\n".
+  \"Citation %.%# undefined\n".
+  \"No \\\\author given."
+let g:Tex_IgnoreLevel = 8
 " Syntastic settings
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
