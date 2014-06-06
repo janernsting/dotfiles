@@ -155,6 +155,8 @@ let g:Tex_IgnoredWarnings =
   \"Citation %.%# undefined\n".
   \"No \\\\author given."
 let g:Tex_IgnoreLevel = 8
+let g:Tex_GotoError = 0
+
 " Syntastic settings
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
