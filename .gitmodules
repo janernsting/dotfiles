@@ -65,3 +65,6 @@
 [submodule "vim/bundle/vimoutliner"]
 	path = vim/bundle/vimoutliner
 	url = https://github.com/vimoutliner/vimoutliner.git
+[submodule "vim/bundle/scriptease"]
+	path = vim/bundle/scriptease
+	url = https://github.com/tpope/vim-scriptease.git
