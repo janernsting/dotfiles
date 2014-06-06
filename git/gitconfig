@@ -11,6 +11,7 @@
 [core]
   editor = vi
   excludesfile = ~/.gitignore_global
+	autocrlf = input
 [color]
   ui = auto
   branch = auto
