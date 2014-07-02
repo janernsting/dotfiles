@@ -71,3 +71,6 @@
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
 	url = git@github.com:janernsting/matchit.zip.git
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
