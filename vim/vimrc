@@ -93,6 +93,9 @@ cmap w!! w !sudo tee >/dev/null %
 autocmd FileType python map <buffer> <leader>f :call Flake8()<CR>
 autocmd BufNewFile,BufRead *.py compiler nose
 
+" use silver searcher/ag as ack replacement
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " NERDTree toggling
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 
