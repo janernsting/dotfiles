@@ -8,6 +8,6 @@ email: jan.ernsting@gmail.com
 passwordeval: ~/.mutt/getsecret.py gmail-pw
 
 # The following are optional, defaults are shown
-cache_filename: ~/.goobook_cache
+cache_filename: /tmp/caches/goobook_cache
 cache_expiry_hours: 24
 ;filter_groupless_contacts: yes
