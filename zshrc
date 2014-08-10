@@ -57,7 +57,7 @@ bindkey "^R" history-incremental-pattern-search-backward
 bindkey "^S" history-incremental-pattern-search-forward
 
 # vi mode
-bindkey jj vi-cmd-mode
+bindkey kj vi-cmd-mode
 
 # tell remote hosts to use byobu, if available
 export LC_TERMTYPE=byobu

@@ -74,7 +74,7 @@ set splitbelow
 set splitright
 
 " remap escape (eliminates reaching for escape key)
-inoremap jj <ESC>
+inoremap kj <ESC>
 
 " Leader key on space bar
 let mapleader = ' '
