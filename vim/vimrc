@@ -164,6 +164,15 @@ let g:Tex_GotoError = 0
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
+" Make sure Vim returns to the same line when reopening a file
+augroup line_return
+  au!
+  au BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \ execute 'normal! g`"zvzz' |
+    \ endif
+augroup END
+
 " quick editing of .vimrc (from sanitz)
 nnoremap <silent> <leader>e :e! ~/.vimrc<cr>
 nnoremap <silent> <leader>s :source ~/.vimrc<cr>
