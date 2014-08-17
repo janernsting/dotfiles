@@ -167,7 +167,7 @@ let g:syntastic_warning_symbol='⚠'
 " Make sure Vim returns to the same line when reopening a file
 augroup line_return
   au!
-  au BufReadPost *
+  au BufReadPost *\(.git/COMMIT_EDITMSG\)\@<!
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \ execute 'normal! g`"zvzz' |
     \ endif
