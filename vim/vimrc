@@ -65,8 +65,8 @@ set history=1000
 set wildmenu
 set wildignore=*.pyc,*.class
 
-" Turn on line numbers
-set number
+" Turn on relative line numbers
+set relativenumber
 
 " Open split panes below or to the right (see
 " https://github.com/thoughtbot/dotfiles/)
