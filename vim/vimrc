@@ -68,6 +68,8 @@ set wildignore=*.pyc,*.class
 " Turn on relative line numbers
 set relativenumber
 
+set nojoinspaces
+
 " Open split panes below or to the right (see
 " https://github.com/thoughtbot/dotfiles/)
 set splitbelow
