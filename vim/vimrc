@@ -68,6 +68,7 @@ set wildignore=*.pyc,*.class
 " Turn on relative line numbers
 set relativenumber
 set cursorline
+set synmaxcol=800
 
 set nojoinspaces
 
