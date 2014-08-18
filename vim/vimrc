@@ -109,6 +109,9 @@ nmap <silent> <leader>g :GundoToggle<CR>
 " ZoomWin toggling
 nnoremap <silent> <leader><leader> :ZoomWin<CR>
 
+" toggle paste mode
+map <silent> <leader>pp :setlocal paste!<cr>
+
 " Gitv should automatically decide where to place preview
 let g:Gitv_OpenHorizontal = "auto"
 
