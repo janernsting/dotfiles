@@ -70,7 +70,7 @@
 	url = https://github.com/tpope/vim-scriptease.git
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
-	url = git@github.com:janernsting/matchit.zip.git
+	url = https://github.com/janernsting/matchit.zip.git
 [submodule "vim/bundle/ack"]
 	path = vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
