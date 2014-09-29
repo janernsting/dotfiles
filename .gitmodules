@@ -74,3 +74,6 @@
 [submodule "vim/bundle/ack"]
 	path = vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/bundle/vim-wordy"]
+	path = vim/bundle/vim-wordy
+	url = https://github.com/reedes/vim-wordy.git
