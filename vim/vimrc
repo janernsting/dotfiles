@@ -112,7 +112,7 @@ nnoremap <silent> <leader><leader> :ZoomWin<CR>
 map <silent> <leader>pp :setlocal paste!<cr>
 
 " quick save
-noremap <silent> <leader>s :update<CR>
+noremap <silent> <leader>w :update<CR>
 
 " Gitv should automatically decide where to place preview
 let g:Gitv_OpenHorizontal = "auto"
@@ -184,3 +184,4 @@ augroup END
 
 " quick editing of .vimrc (from sanitz)
 nnoremap <silent> <leader>e :e! ~/.vimrc<cr>
+nnoremap <silent> <leader>s :source ~/.vimrc<cr>
