@@ -31,8 +31,8 @@ type = IMAP
 maxconnections = 2
 remotehost = localhost
 remoteport = 1143
-remoteuser = "WI\\jaer01"
-remotepasseval = get_secret("wi-pw")
+remoteuser = "j_erns01"
+remotepasseval = get_secret("uni")
 realdelete = yes
 
 nametrans = convert_to_local
