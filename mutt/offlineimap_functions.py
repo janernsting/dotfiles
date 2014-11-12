@@ -8,8 +8,8 @@ def get_secret(display_name, keyring_name = "login"):
     if display_name == item.get_display_name():
       return item.get_secret()
 
-top_level_folders = ['Drafts', 'Sent', 'Trash', 'Junk-E-Mail', ]
-translation = { 'Junk-E-Mail': 'spam', }
+top_level_folders = ['Drafts', 'Sent', 'Trash', 'Junk', ]
+translation = { 'Junk': 'spam', }
 inverse_translation = {v:k for k, v in translation.items()}
 
 def convert_to_local(folder):
@@ -35,4 +35,4 @@ def first_to_upper(s):
 
 def filter_folder(folder):
   return not folder.startswith('Synchronisierungsprobleme') \
-      and folder not in ['Postausgang', ]
+      and folder not in ['Postausgang', 'Unsent Messages']

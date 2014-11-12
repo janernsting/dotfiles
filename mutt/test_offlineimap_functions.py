@@ -28,7 +28,7 @@ class RemoteToLocalTest(unittest.TestCase):
     self.assert_converts_to('INBOX/EAI 2013', 'EAI_2013')
 
   def testTranslateJunkEMailToSpam(self):
-    self.assert_converts_to('Junk-E-Mail', 'spam')
+    self.assert_converts_to('Junk', 'spam')
 
 
 class LocalToRemoteTest(unittest.TestCase):
@@ -56,7 +56,7 @@ class LocalToRemoteTest(unittest.TestCase):
     self.assert_converts_to('INBOX/MD2', 'INBOX/MD2')
 
   def testTranslateSpamToJunkEMail(self):
-    self.assert_converts_to('spam', 'Junk-E-Mail')
+    self.assert_converts_to('spam', 'Junk')
 
 
 class FolderfilterTest(unittest.TestCase):
@@ -66,6 +66,9 @@ class FolderfilterTest(unittest.TestCase):
 
   def testExcludePostausgang(self):
     assert_that(not funcs.filter_folder('Postausgang'))
+
+  def testExcludeUnsentMessages(self):
+    assert_that(not funcs.filter_folder('Unsent Messages'))
 
   def testIncludeOthers(self):
     assert_that(funcs.filter_folder('INBOX'))
