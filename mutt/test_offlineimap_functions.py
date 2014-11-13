@@ -64,9 +64,6 @@ class FolderfilterTest(unittest.TestCase):
     assert_that(not funcs.filter_folder('Synchronisierungsprobleme'))
     assert_that(not funcs.filter_folder('Synchronisierungsprobleme.Konflikte'))
 
-  def testExcludePostausgang(self):
-    assert_that(not funcs.filter_folder('Postausgang'))
-
   def testExcludeUnsentMessages(self):
     assert_that(not funcs.filter_folder('Unsent Messages'))
 

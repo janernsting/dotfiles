@@ -35,4 +35,4 @@ def first_to_upper(s):
 
 def filter_folder(folder):
   return not folder.startswith('Synchronisierungsprobleme') \
-      and folder not in ['Postausgang', 'Unsent Messages']
+      and folder not in ['Unsent Messages']
