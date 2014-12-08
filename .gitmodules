@@ -77,3 +77,6 @@
 [submodule "vim/bundle/vim-wordy"]
 	path = vim/bundle/vim-wordy
 	url = https://github.com/reedes/vim-wordy.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = git://github.com/scrooloose/syntastic
