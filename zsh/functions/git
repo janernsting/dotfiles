@@ -10,6 +10,9 @@ g() {
 }
 compdef g=git
 
+gitv() { vim "$(git rev-parse --show-toplevel)"/.git/index -c "Gitv $@" -c "tabonly" }
+compdef _git gitv=git-log
+
 alias gst='git status'
 compdef _git gst=git-status
 alias gl='git pull'
