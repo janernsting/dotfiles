@@ -80,3 +80,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic
+[submodule "vim/bundle/renamer"]
+	path = vim/bundle/renamer
+	url = https://github.com/vim-scripts/renamer.vim.git
