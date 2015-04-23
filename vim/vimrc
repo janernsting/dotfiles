@@ -88,7 +88,7 @@ set showcmd
 set scrolloff=3
 set sidescrolloff=5
 
-set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+set listchars=tab:»·,trail:·,extends:>,precedes:<,nbsp:+
 " allow to save files with root permissions
 cmap w!! w !sudo tee >/dev/null %
 
