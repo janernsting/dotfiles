@@ -56,6 +56,10 @@ zstyle ':completion:*:rm:*:(all-|)files' ignored-patterns
 bindkey "^R" history-incremental-pattern-search-backward
 bindkey "^S" history-incremental-pattern-search-forward
 
+# escape shell characters in urls 
+autoload -U url-quote-magic
+zle -N self-insert url-quote-magic
+
 # vi mode
 bindkey kj vi-cmd-mode
 
