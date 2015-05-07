@@ -114,6 +114,9 @@ map <silent> <leader>pp :setlocal paste!<cr>
 " quick save
 noremap <silent> <leader>w :update<CR>
 
+" Clean trailing whitespace
+nnoremap <leader>dw mz:%s/\s\+$//<cr>:let @/=''<cr>`z
+
 " Gitv should automatically decide where to place preview
 let g:Gitv_OpenHorizontal = "auto"
 
