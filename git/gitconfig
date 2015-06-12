@@ -36,3 +36,5 @@
   insteadOf = gh:~
 [url "ssh://git@wi-pigit.uni-muenster.de/"]
   insteadOf = pigit:
+[rebase]
+	autosquash = true
