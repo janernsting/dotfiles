@@ -89,3 +89,7 @@
 [submodule "vim/bundle/DidYouMean"]
 	path = vim/bundle/DidYouMean
 	url = https://github.com/EinfachToll/DidYouMean.git
+[submodule "vim/bundle/SyntaxRange"]
+	path = vim/bundle/SyntaxRange
+	url = https://github.com/vim-scripts/SyntaxRange.git
+	ignore = dirty
