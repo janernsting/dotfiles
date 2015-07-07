@@ -7,6 +7,6 @@ set crypt_replyencrypt="yes"
 set crypt_replysign="yes"
 set crypt_replysignencrypted="yes"
 set crypt_verify_sig="yes"
-set smime_default_key="323ae483.0"
+set smime_default_key="710b58dc.0"
 
 # vim: ft=muttrc
