@@ -5,3 +5,7 @@ if [ -e "$TMUX" ]
 else
   set -gx TERM screen-256color
 end
+
+function mutt
+  bash --login -c '/usr/bin/mutt' $argv;
+end
