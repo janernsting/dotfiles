@@ -2,7 +2,7 @@
 # http://github.com/mitsuhiko/dotfiles/blob/master/Makefile
 # found in https://github.com/sanitz/dotfiles/blob/master/Makefile
 
-install: install-vim install-mutt install-git install-custom-zsh install-misc-rcs
+install: install-vim install-mutt install-git install-custom-zsh install-fish install-misc-rcs
 
 install-vim:
 	rm -rf ~/.vim ~/.vimrc
@@ -32,6 +32,10 @@ install-zsh:
 install-custom-zsh: install-zsh
 	rm -r `pwd`/oh-my-zsh/custom/* # remove placeholder files
 	ln -s `pwd`/zsh/custom/* `pwd`/oh-my-zsh/custom/ # install custom plugins
+
+install-fish:
+	rm -rf ~/.config/fish
+	ln -s `pwd`/fish ~/.config/fish
 
 install-misc-rcs:
 	rm -rf ~/.wgetrc
