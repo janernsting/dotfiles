@@ -1,4 +1,5 @@
 set DEFAULT_USER jan
+set fish_greeting # disable fish greeting
 
 if [ -e "$TMUX" ]
   set -gx TERM xterm-256color
