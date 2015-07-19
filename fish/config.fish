@@ -1,6 +1,8 @@
 set DEFAULT_USER jan
 set fish_greeting # disable fish greeting
 
+fish_vi_mode
+
 if [ -e "$TMUX" ]
   set -gx TERM xterm-256color
 else
@@ -19,5 +21,3 @@ function git
     command git status -sb
   end
 end
-
-fish_vi_mode
