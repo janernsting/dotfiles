@@ -18,3 +18,5 @@ function git
     command git status -sb
   end
 end
+
+fish_vi_mode
