@@ -21,3 +21,5 @@ function git
     command git status -sb
   end
 end
+
+set -U fish_user_abbreviations 'g=git'
