@@ -27,4 +27,4 @@ function git
   end
 end
 
-set -U fish_user_abbreviations 'g=git'
+set fish_user_abbreviations 'g=git'
