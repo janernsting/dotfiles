@@ -11,4 +11,6 @@ function fish_user_key_bindings
   bind -M insert \ce accept-autosuggestion
 
   bind \cu backward-kill-line
+
+  bind -M default V edit_command
 end
