@@ -23,4 +23,4 @@ end
 set fish_user_abbreviations 'g=git'
 
 # enable vi mode indicator
-set -g __fish_vi_mode 1
+set -g __custom_fish_vi_mode 1

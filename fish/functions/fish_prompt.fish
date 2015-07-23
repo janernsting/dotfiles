@@ -57,6 +57,22 @@ function prompt_status
   prompt_segment black normal "$icons"
 end
 
+function prompt_vi_mode
+  # Do nothing if not in vi mode
+  if set -q __custom_fish_vi_mode
+    switch $fish_bind_mode
+      case default
+        prompt_segment red normal "N "
+      case insert
+        prompt_segment green normal "I "
+      case replace-one
+        prompt_segment green normal "R "
+      case visual
+        prompt_segment magenta normal "V "
+    end
+  end
+end
+
 function prompt_git
   if command git rev-parse --is-inside-work-tree >/dev/null 2>&1
     set -l ref
@@ -91,6 +107,7 @@ end
 function fish_prompt
   set RSTATUS $status
   prompt_status
+  prompt_vi_mode
   prompt_context
   prompt_dir
   prompt_git
