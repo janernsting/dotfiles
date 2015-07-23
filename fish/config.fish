@@ -7,6 +7,8 @@ else
   set -gx TERM screen-256color
 end
 
+set -gx EDITOR vim
+
 function mutt
   bash --login -c '/usr/bin/mutt' $argv;
 end
