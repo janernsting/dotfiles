@@ -93,3 +93,6 @@
 	path = vim/bundle/SyntaxRange
 	url = https://github.com/vim-scripts/SyntaxRange.git
 	ignore = dirty
+[submodule "vim/bundle/vim-fish"]
+	path = vim/bundle/vim-fish
+	url = https://github.com/dag/vim-fish.git
