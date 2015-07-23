@@ -1,13 +1,6 @@
 set DEFAULT_USER jan
 set fish_greeting # disable fish greeting
 
-# enable vi mode indicator
-set -g __fish_vi_mode 1
-
-function fish_user_key_bindings
-  fish_vi_key_bindings
-end
-
 if [ -e "$TMUX" ]
   set -gx TERM xterm-256color
 else
@@ -28,3 +21,10 @@ function git
 end
 
 set fish_user_abbreviations 'g=git'
+
+# enable vi mode indicator
+set -g __fish_vi_mode 1
+
+function fish_user_key_bindings
+  fish_vi_key_bindings
+end
