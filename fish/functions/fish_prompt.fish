@@ -3,10 +3,11 @@ set SEGMENT_BG
 set RSTATUS
 
 # Create segment of prompt
-function prompt_segment
-  set -l bg $argv[1]
-  set -l fg $argv[2]
-  [ (count $argv) -gt 2 ]; and set -l content $argv[3..-1]
+function __prompt_segment
+  set -l highlight $argv[1]
+  set -l bg $argv[2]
+  set -l fg $argv[3]
+  [ (count $argv) -gt 3 ]; and set -l content $argv[4..-1]
 
   set_color -b $bg
 
@@ -16,6 +17,7 @@ function prompt_segment
 
   if [ -n "$content" ]
     set SEGMENT_BG $bg
+    [ $highlight != 'none' ]; and set_color --$highlight
     set_color -b $bg $fg
     echo -n " $content"
   end
@@ -26,6 +28,14 @@ function color_echo
   set_color $argv[1]
   echo -n $argv[2]
   #set_color normal
+end
+
+function prompt_segment
+  __prompt_segment 'none' $argv
+end
+
+function bold_prompt_segment
+  __prompt_segment 'bold' $argv
 end
 
 function prompt_context
@@ -62,13 +72,13 @@ function prompt_vi_mode
   if set -q __custom_fish_vi_mode
     switch $fish_bind_mode
       case default
-        prompt_segment red normal "N "
+        bold_prompt_segment red white "N "
       case insert
-        prompt_segment green normal "I "
+        bold_prompt_segment green white "I "
       case replace-one
-        prompt_segment green normal "R "
+        bold_prompt_segment green white "R "
       case visual
-        prompt_segment magenta normal "V "
+        bold_prompt_segment magenta white "V "
     end
   end
 end
