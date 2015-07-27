@@ -11,4 +11,5 @@ function fish_user_key_bindings
   bind \cu backward-kill-line
 
   bind -M default V edit_command
+  bind -M default K commandline_man
 end
