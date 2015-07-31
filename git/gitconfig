@@ -19,7 +19,7 @@
   interactive = auto
   status = auto
 [alias]
-  st = status -sb
+  st = status
   ci = commit
   br = branch
   co = checkout
