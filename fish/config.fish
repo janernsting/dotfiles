@@ -12,15 +12,4 @@ function mutt
   bash --login -c '/usr/bin/mutt' $argv;
 end
 
-function git
-  # inspired by thoughtbot/dotfiles
-  if count $argv > /dev/null # alternative: set -q argv
-    command git $argv
-  else
-    command git status -sb
-  end
-end
-
-set fish_user_abbreviations 'g=git'
-
 set fish_key_bindings fish_vi_key_bindings
