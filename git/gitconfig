@@ -38,3 +38,5 @@
   insteadOf = pigit:
 [rebase]
   autosquash = true
+[rerere]
+  enabled = true
