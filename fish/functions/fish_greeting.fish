@@ -30,16 +30,6 @@ if not set -q budspencer_colors
   set -U budspencer_colors $budspencer_night
 end
 
-# Cursor color changes according to vi-mode
-# Define values for: normal_mode insert_mode visual_mode
-set -U budspencer_cursors "\033]12;#$budspencer_colors[10]\007" "\033]12;#$budspencer_colors[5]\007" "\033]12;#$budspencer_colors[8]\007" "\033]12;#$budspencer_colors[9]\007"
-
-# Some terminals cannot change the cursor color
-set -l unsupported_terminals 'fbterm' 'st' 'linux' 'screen'
-if contains $TERM $unsupported_terminals
-  set budspencer_cursors '' '' '' ''
-end
-
 ###############################################################################
 # => Functions
 ###############################################################################
@@ -49,12 +39,10 @@ end
 ################
 function day -d "Set color palette for bright environment."
   set budspencer_colors $budspencer_day
-  set budspencer_cursors "\033]12;#$budspencer_colors[10]\007" "\033]12;#$budspencer_colors[5]\007" "\033]12;#$budspencer_colors[8]\007" "\033]12;#$budspencer_colors[9]\007"
 end
 
 function night -d "Set color palette for dark environment."
   set budspencer_colors $budspencer_night
-  set budspencer_cursors "\033]12;#$budspencer_colors[10]\007" "\033]12;#$budspencer_colors[5]\007" "\033]12;#$budspencer_colors[8]\007" "\033]12;#$budspencer_colors[9]\007"
 end
 
 #################
