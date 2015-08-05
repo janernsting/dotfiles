@@ -654,7 +654,7 @@ end
 
 # Don't save in command history
 if not set -q budspencer_nocmdhist
-  set -U budspencer_nocmdhist 'c' 'd' 'll' 'ls' 'm' 's'
+  set -U budspencer_nocmdhist 'c' 'd' 'la' 'll' 'ls' 'm' 's' 'git' 'clear'
 end
 
 # Set PWD segment style
