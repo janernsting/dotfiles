@@ -533,7 +533,7 @@ end
 # => Symbols segment
 ####################
 function __budspencer_prompt_left_symbols -d 'Display symbols'
-  set -l jobs (jobs | wc -l)
+  set -l jobs (jobs | wc -l | tr -d '[:space:]')
   set_color -b $budspencer_colors[2]
   echo -n ''
 
