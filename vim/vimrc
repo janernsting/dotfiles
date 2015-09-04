@@ -85,8 +85,9 @@ inoremap kj <ESC>
 " Leader key on space bar
 let mapleader = ' '
 
-" show commands
+" show commands, but ignore mode as it shown by airline
 set showcmd
+set noshowmode
 
 set scrolloff=3
 set sidescrolloff=5
