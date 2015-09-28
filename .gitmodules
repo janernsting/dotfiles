@@ -79,7 +79,7 @@
 	url = https://github.com/reedes/vim-wordy.git
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
-	url = git://github.com/scrooloose/syntastic
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/bundle/renamer"]
 	path = vim/bundle/renamer
 	url = https://github.com/vim-scripts/renamer.vim.git
