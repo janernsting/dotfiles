@@ -12,4 +12,7 @@ function fish_user_key_bindings
 
   bind -M default V edit_command
   bind -M default K commandline_man
+
+  bind \cr search_history
+  bind -M insert \cr search_history
 end
