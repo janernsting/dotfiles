@@ -616,7 +616,7 @@ function __budspencer_prompt_left_symbols -d 'Display symbols'
       set symbols $symbols(set_color $budspencer_colors[10])' '(expr (count $bookmarks) - (contains -i $PWD $bookmarks))
     end
     if set -q -x VIM
-      set symbols $symbols(set_color -o $budspencer_colors[9])' V'(set_color normal)
+      set symbols $symbols(set_color -o $budspencer_colors[9])' V'
       set symbols_urgent 'T'
     end
     if set -q -x RANGER_LEVEL
@@ -628,7 +628,7 @@ function __budspencer_prompt_left_symbols -d 'Display symbols'
       set symbols_urgent 'T'
     end
     if [ ! -w . ]
-      set symbols $symbols(set_color -o $budspencer_colors[6])' '(set_color normal)
+      set symbols $symbols(set_color -o $budspencer_colors[6])' '
     end
     if [ $last_status -eq 0 ]
       set symbols $symbols(set_color $budspencer_colors[12])' '$last_status
