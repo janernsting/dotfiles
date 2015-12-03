@@ -206,5 +206,4 @@ endfunction
 au FileType mail au BufWritePre <buffer> call TrimEndLines()
 
 " quick editing of .vimrc (from sanitz)
-nnoremap <silent> <leader>e :e! ~/.vimrc<cr>
 nnoremap <silent> <leader>s :source ~/.vimrc<cr>
