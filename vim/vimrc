@@ -205,5 +205,12 @@ endfunction
 " always trim empty lines from mails
 au FileType mail au BufWritePre <buffer> call TrimEndLines()
 
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+
+" Check English and German spelling
+set spelllang=en,de
+" Spell-check Git messages
+autocmd FileType gitcommit setlocal spell
+
 " quick editing of .vimrc (from sanitz)
 nnoremap <silent> <leader>s :source ~/.vimrc<cr>
