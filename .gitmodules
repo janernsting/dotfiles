@@ -99,3 +99,6 @@
 [submodule "vim/bundle/easy-align"]
 	path = vim/bundle/easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "vim/bundle/hardtime"]
+	path = vim/bundle/hardtime
+	url = https://github.com/takac/vim-hardtime.git

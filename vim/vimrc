@@ -17,6 +17,9 @@ set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " syntax highlighting
 syntax enable
 
+" prevent repeated simple movements to break habits
+let g:hardtime_default_on = 1
+
 " colorscheme
 set background=dark
 let g:solarized_termcolors=256
