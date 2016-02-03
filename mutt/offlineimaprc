@@ -28,6 +28,7 @@ nametrans = convert_to_remote
 
 [Repository remote-wi]
 type = IMAP
+ssl = no
 maxconnections = 2
 remotehost = localhost
 remoteport = 1143
