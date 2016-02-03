@@ -55,6 +55,7 @@ nametrans = lambda folder: {
 [Repository remote-gmail]
 type = Gmail
 maxconnections = 1
+auth_mechanisms = GSSAPI, CRAM-MD5, PLAIN, LOGIN
 remoteusereval = "jan.ernsting@gmail.com"
 remotepasseval = get_secret("gmail-pw")
 
