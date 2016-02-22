@@ -201,7 +201,7 @@ augroup line_return
 augroup END
 
 " trim empty lines at the of the current file
-function TrimEndLines()
+function! TrimEndLines()
   let save_cursor = getpos(".")
   :silent! %s#\($\n\s*\)\+\%$##
   call setpos('.', save_cursor)
