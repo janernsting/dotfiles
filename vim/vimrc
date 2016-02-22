@@ -70,6 +70,7 @@ set history=1000
 
 " Make tab completion for files/buffers act like bash
 set wildmenu
+set wildignorecase
 set wildignore=*.pyc,*.class
 
 " Turn on relative line numbers
