@@ -5,7 +5,7 @@ set spoolfile= +"wi/INBOX"
 set postponed= +"wi/drafts"
 set record=""
 
-macro index,pager y "<save-message>+wi/archive<enter>" "Archive"
+macro index,pager y "<save-message>+wi/archive<enter>" "archive the current entry"
 
 set signature="~/.mutt/wi-signature"
 source ~/.mutt/smime.rc

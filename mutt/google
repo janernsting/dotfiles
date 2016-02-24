@@ -5,7 +5,7 @@ set spoolfile=+"gmail/INBOX"
 set postponed=+"gmail/drafts"
 set record=""
 
-macro index,pager y "<save-message>+gmail/archive<enter>" "Archive"
+macro index,pager y "<save-message>+gmail/archive<enter>" "archive the current entry"
 
 unset signature
 source ~/.mutt/gpg.rc
