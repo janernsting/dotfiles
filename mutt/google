@@ -6,6 +6,7 @@ set postponed=+"gmail/drafts"
 set record=""
 
 macro index,pager y "<save-message>+gmail/archive<enter>" "archive the current entry"
+macro index,pager d "<save-message>+gmail/trash<enter>" "delete the current entry"
 
 unset signature
 source ~/.mutt/gpg.rc

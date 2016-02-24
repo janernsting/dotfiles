@@ -6,6 +6,7 @@ set postponed= +"wi/drafts"
 set record=""
 
 macro index,pager y "<save-message>+wi/archive<enter>" "archive the current entry"
+macro index,pager d "<delete-message>" "delete the current entry"
 
 set signature="~/.mutt/wi-signature"
 source ~/.mutt/smime.rc
