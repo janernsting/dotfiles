@@ -2,6 +2,8 @@ set from="jan.ernsting@gmail.com"
 set hostname="gmail.com"
 alternates ""
 
+color status brightyellow magenta
+
 set spoolfile=+"gmail/INBOX"
 set postponed=+"gmail/drafts"
 set record=""
