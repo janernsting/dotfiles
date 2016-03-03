@@ -1,5 +1,6 @@
 set from="jan.ernsting@wi.uni-muenster.de"
 set hostname="wi.uni-muenster.de"
+alternates ^(j_erns01|jan.ernsting)@(uni-muenster.de|ercis.de)$"
 
 set spoolfile= +"wi/INBOX"
 set postponed= +"wi/drafts"
