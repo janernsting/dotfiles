@@ -39,8 +39,8 @@ if [ $fish_key_bindings = 'fish_vi_key_bindings' ]
   bind H __budspencer_cd_prev
   bind m mark
   bind M unmark
-  bind -M insert \n __budspencer_preexec
-  bind \n __budspencer_preexec
+  bind -M insert \r __budspencer_preexec
+  bind \r __budspencer_preexec
 end
 
 ###############################################################################
