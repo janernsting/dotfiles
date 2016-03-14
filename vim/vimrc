@@ -170,6 +170,9 @@ let g:tex_flavor='latex'
 " use bibtex8 to support biblatex
 let g:Tex_BibtexFlavor = "bibtex8"
 
+" disable section maps
+let g:Tex_SectionMaps = 0
+
 " Taglist / LaTeX
 let tlist_bib_settings   = 'bib;a:BibTeX-Authors;e:BibTeX-Entries;t:BibTeX-Titles;s:BibTeX-Strings'
 let tlist_make_settings  = 'make;m:makros;t:targets'
