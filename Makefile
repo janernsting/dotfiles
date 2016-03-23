@@ -42,6 +42,7 @@ install-peco:
 	ln -s `pwd`/peco ~/.config/peco
 
 install-misc-rcs:
-	rm -rf ~/.wgetrc
+	rm -rf ~/.wgetrc ~/.ctags
 	ln -s `pwd`/wgetrc ~/.wgetrc
+	ln -s `pwd`/ctags ~/.ctags
 
