@@ -135,23 +135,11 @@ nnoremap <leader>dw mz:%s/\s\+$//<cr>:let @/=''<cr>`z
 " Gitv should automatically decide where to place preview
 let g:Gitv_OpenHorizontal = "auto"
 
-" Taglist variables
-" Display function name in status bar:
-let g:ctags_statusline=1
-" Automatically start script
-let generate_tags=1
+" Tagbar configuration
 " Displays taglist results in a vertical window:
-let Tlist_Use_Horiz_Window=0
+let g:tagbar_left = 1
 " Shorter commands to toggle Taglist display
-nnoremap TT :TlistToggle<CR>
-" Various Taglist diplay config:
-let Tlist_Compact_Format = 1
-let Tlist_Exit_OnlyWindow = 1           " exit if taglist is last window open
-let Tlist_Show_One_File = 1             " only show tags for current buffer
-let Tlist_Enable_Fold_Column = 0        " no fold column (only showing one file)
-let Tlist_GainFocus_On_ToggleOpen = 1   " automatically gain focus
-let Tlist_File_Fold_Auto_Close = 1
-let Tlist_Inc_Winwidth = 0
+nnoremap TT :TagbarToggle<CR>
 
 " LaTeX suite
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
