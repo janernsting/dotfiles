@@ -8,8 +8,4 @@ end
 
 set -gx EDITOR vim
 
-function mutt
-  bash --login -c '/usr/bin/mutt' $argv;
-end
-
 set fish_key_bindings fish_vi_key_bindings
