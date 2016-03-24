@@ -153,6 +153,8 @@ let g:tagbar_type_asciidoc = {
     \ ],
     \ 'sort' : 0
 \ }
+" disable tagbar in airline status
+let g:airline#extensions#tagbar#enabled = 0
 
 " LaTeX suite
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
