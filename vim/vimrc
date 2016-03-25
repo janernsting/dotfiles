@@ -136,8 +136,6 @@ nnoremap <leader>dw mz:%s/\s\+$//<cr>:let @/=''<cr>`z
 let g:Gitv_OpenHorizontal = "auto"
 
 " Tagbar configuration
-" Displays taglist results in a vertical window:
-let g:tagbar_left = 1
 " Shorter commands to toggle Taglist display
 nnoremap TT :TagbarToggle<CR>
 
