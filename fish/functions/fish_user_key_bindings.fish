@@ -6,7 +6,7 @@ function fish_user_key_bindings
   bind \cl 'clear; commandline -f repaint'
   bind -M insert \cl 'clear; commandline -f repaint'
 
-  bind -M insert \ce accept-autosuggestion
+  bind -M insert \cf forward-word
 
   bind \cu backward-kill-line
 
