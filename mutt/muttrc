@@ -6,7 +6,6 @@ folder-hook +wi/.* 'source ~/.mutt/wi'
 folder-hook +gmail/.* 'source ~/.mutt/google'
 
 macro index <esc>1 "<change-folder>~/.mail/gmail/INBOX<enter>"
-macro index <esc>2 "<change-folder>~/.mail/wi/INBOX<enter>"
 
 source ~/.mutt/colors-solarized-dark-256.muttrc
 

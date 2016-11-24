@@ -3,7 +3,7 @@
 # https://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf
 
 metadata = ~/.offlineimap
-accounts = wi, gmail
+accounts = gmail
 maxsyncaccounts = 2
 socktimeout = 60
 ui = Curses.Blinkenlights, TTY.TTYUI
@@ -11,33 +11,11 @@ ui = Curses.Blinkenlights, TTY.TTYUI
 # This helper file lets you use gnome-keyring to store usernames / passwords
 pythonfile = ~/.mutt/offlineimap_functions.py
 
-[Account wi]
-localrepository = local-wi
-remoterepository = remote-wi
-status_backend = sqlite
-
 [Account gmail]
 localrepository = local-gmail
 remoterepository = remote-gmail
 status_backend = sqlite
 
-[Repository local-wi]
-type = Maildir
-localfolders = ~/.mail/wi
-nametrans = convert_to_remote
-
-[Repository remote-wi]
-type = IMAP
-ssl = no
-maxconnections = 2
-remotehost = localhost
-remoteport = 1143
-remoteuser = "j_erns01"
-remotepasseval = get_secret("uni")
-realdelete = yes
-
-nametrans = convert_to_local
-folderfilter = filter_folder
 
 [Repository local-gmail]
 type = Maildir
