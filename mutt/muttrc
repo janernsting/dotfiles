@@ -49,11 +49,11 @@ macro index,pager \cO \
 macro compose \ch "<edit-bcc>,`~/.mutt/getsecret.py highrise-dropbox`<enter>" \
   "add BCC for Highrise"
 macro index,pager \ch "\
-<enter-command>set my_old_forward_edit=\$forward_edit my_old_signature=\$signature<enter>\
+<enter-command>set my_old_forward_edit=\$forward_edit my_old_signature=\$signature my_old_mime_forward=\$mime_forward<enter>\
 <enter-command>set forward_edit=no<enter>\
-<enter-command>unset signature<enter>\
+<enter-command>unset signature mime_forward<enter>\
 <forward-message>`~/.mutt/getsecret.py highrise-dropbox`<enter>\
-<enter-command>set forward_edit=\$my_old_forward_edit signature=\$my_old_signature<enter>" \
+<enter-command>set forward_edit=\$my_old_forward_edit signature=\$my_old_signature mime_forward=\$my_old_mime_forward<enter>" \
   "forward to Highrise"
 
 source ~/.mutt/sort-threads.rc
