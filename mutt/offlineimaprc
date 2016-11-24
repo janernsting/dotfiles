@@ -3,7 +3,7 @@
 # https://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf
 
 metadata = ~/.offlineimap
-accounts = gmail
+accounts = gmail, it-agile
 maxsyncaccounts = 2
 socktimeout = 60
 ui = Curses.Blinkenlights, TTY.TTYUI
@@ -16,6 +16,10 @@ localrepository = local-gmail
 remoterepository = remote-gmail
 status_backend = sqlite
 
+[Account it-agile]
+localrepository = local-it-agile
+remoterepository = remote-it-agile
+status_backend = sqlite
 
 [Repository local-gmail]
 type = Maildir
@@ -36,6 +40,41 @@ maxconnections = 1
 auth_mechanisms = GSSAPI, CRAM-MD5, PLAIN, LOGIN
 remoteusereval = "jan.ernsting@gmail.com"
 remotepasseval = get_secret("gmail-pw")
+
+# If using ssl, you will need to specify certificates to use with them
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+realdelete = no
+
+nametrans = lambda folder: {
+                             '[Gmail]/Entw&APw-rfe': 'drafts',
+                             '[Gmail]/Gesendet': 'sent',
+                             '[Gmail]/Markiert': 'flagged',
+                             '[Gmail]/Papierkorb': 'trash',
+                             '[Gmail]/Alle Nachrichten': 'archive',
+                             '[Gmail]/Spam': 'spam',
+                           }.get(folder, folder)
+
+[Repository local-it-agile]
+type = Maildir
+localfolders = ~/.mail/it-agile
+
+nametrans = lambda folder: {
+                             'drafts': '[Gmail]/Entw&APw-rfe',
+                             'sent': '[Gmail]/Gesendet',
+                             'flagged': '[Gmail]/Markiert',
+                             'trash': '[Gmail]/Papierkorb',
+                             'archive': '[Gmail]/Alle Nachrichten',
+                             'spam': '[Gmail]/Spam',
+                           }.get(folder, folder)
+
+[Repository remote-it-agile]
+type = Gmail
+maxconnections = 1
+auth_mechanisms = GSSAPI, CRAM-MD5, PLAIN, LOGIN
+remoteusereval = "jan.ernsting@it-agile.de"
+remotepasseval = get_secret("it-agile-pw")
 
 # If using ssl, you will need to specify certificates to use with them
 ssl = yes

@@ -1,0 +1,16 @@
+set from="jan.ernsting@it-agile.de"
+set hostname="gmail.com"
+alternates ""
+
+color status black yellow
+
+set spoolfile= +"it-agile/INBOX"
+set postponed= +"it-agile/drafts"
+set record=""
+
+macro index,pager y "<save-message>+it-agile/archive<enter>" "archive the current entry"
+macro index,pager d "<save-message>+it-agile/trash<enter>" "delete the current entry"
+
+set signature="~/.mutt/it-agile-signature"
+source ~/.mutt/no-crypto.rc
+# vim: ft=muttrc

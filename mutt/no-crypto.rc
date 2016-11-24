@@ -1,0 +1,8 @@
+unset crypt_autosign
+unset crypt_replysign
+unset crypt_replyencrypt
+unset crypt_replysignencrypted
+unset pgp_auto_decode
+unset smime_is_default
+
+# vim: ft=muttrc
