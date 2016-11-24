@@ -11,17 +11,6 @@ set record=""
 macro index,pager y "<save-message>+it-agile/archive<enter>" "archive the current entry"
 macro index,pager d "<save-message>+it-agile/trash<enter>" "delete the current entry"
 
-# comma before dropbox address to maintain validity in case of other BCC addresses
-macro compose \ch "<edit-bcc>,`~/.mutt/getsecret.py highrise-dropbox`<enter>" \
-  "add BCC for Highrise"
-macro index,pager \ch "\
-<enter-command>set my_old_forward_edit=\$forward_edit my_old_signature=\$signature<enter>\
-<enter-command>set forward_edit=no<enter>\
-<enter-command>unset signature<enter>\
-<forward-message>`~/.mutt/getsecret.py highrise-dropbox`<enter>\
-<enter-command>set forward_edit=\$my_old_forward_edit signature=\$my_old_signature<enter>" \
-  "forward to Highrise"
-
 set signature="~/.mutt/it-agile-signature"
 source ~/.mutt/no-crypto.rc
 # vim: ft=muttrc
