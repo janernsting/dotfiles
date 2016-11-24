@@ -1,6 +1,6 @@
 set folder = ~/.mail
 source ~/.mutt/muttmailboxes
-source ~/.mutt/google
+source ~/.mutt/it-agile
 
 folder-hook +wi/.* 'source ~/.mutt/wi'
 folder-hook +gmail/.* 'source ~/.mutt/google'
