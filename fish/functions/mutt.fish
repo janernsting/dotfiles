@@ -1,3 +1,3 @@
 function mutt
-  bash --login -c '/usr/bin/mutt' $argv;
+  bash --login -c 'mutt' $argv;
 end
