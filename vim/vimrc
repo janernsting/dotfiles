@@ -154,45 +154,10 @@ let g:tagbar_type_asciidoc = {
 " disable tagbar in airline status
 let g:airline#extensions#tagbar#enabled = 0
 
-" LaTeX suite
-" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin indent on
 
-imap <buffer> <silent> <C-E> <Plug>Tex_Completion
-
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a single file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
 set grepprg=grep\ -nH\ $*
-
-" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
-" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" The following changes the default filetype back to 'tex':
-let g:tex_flavor='latex'
-
-" use bibtex8 to support biblatex
-let g:Tex_BibtexFlavor = "bibtex8"
-
-" disable section maps
-let g:Tex_SectionMaps = 0
-
-" Taglist / LaTeX
-let tlist_bib_settings   = 'bib;a:BibTeX-Authors;e:BibTeX-Entries;t:BibTeX-Titles;s:BibTeX-Strings'
-let tlist_make_settings  = 'make;m:makros;t:targets'
-let tlist_tex_settings   = 'latex;s:Contents;g:Graphics;i:Listings;l:\label;r:\ref;p:\pageref;b:\bibitem'
-
-let g:Tex_IgnoredWarnings =
-  \"Underfull\n".
-  \"Overfull\n".
-  \"specifier changed to\n".
-  \"You have requested\n".
-  \"Missing number, treated as zero.\n".
-  \"There were undefined references\n".
-  \"Citation %.%# undefined\n".
-  \"No \\\\author given."
-let g:Tex_IgnoreLevel = 8
-let g:Tex_GotoError = 0
-
+"
 " Syntastic settings
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
