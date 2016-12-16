@@ -11,7 +11,7 @@ macro index <esc>2 "<change-folder>~/.mail/it-agile/INBOX<enter>"
 
 source ~/.mutt/colors-solarized-dark-256.muttrc
 
-set sendmail="/usr/bin/msmtp"               #Pfad zu dem Programm, das die Mails verschicken soll
+set sendmail="msmtp"                        #Pfad zu dem Programm, das die Mails verschicken soll
 set envelope_from=yes                       #übergibt msmtp automatisch den richtigen Absender
 set edit_hdrs                               #Empfänger u.a. auch im Editor bearbeiten
 set fast_reply
