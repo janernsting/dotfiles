@@ -1,3 +1,5 @@
+*.DS_Store
+
 # vim related files #
 #####################
 .*.sw[a-z]
