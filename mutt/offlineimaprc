@@ -43,7 +43,7 @@ remotepasseval = get_secret("gmail-pw")
 
 # If using ssl, you will need to specify certificates to use with them
 ssl = yes
-sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+sslcacertfile = /usr/local/etc/openssl/cert.pem
 
 realdelete = no
 
@@ -78,7 +78,7 @@ remotepasseval = get_secret("it-agile-pw")
 
 # If using ssl, you will need to specify certificates to use with them
 ssl = yes
-sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+sslcacertfile = /usr/local/etc/openssl/cert.pem
 
 realdelete = no
 
