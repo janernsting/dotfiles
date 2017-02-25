@@ -73,4 +73,4 @@ set pager_context=5
 set pager_stop=yes
 
 #Editor, der zum Verfassen der E-Mail benutzt wird, hier Vim mit Zeilenumbruch bei 70 Zeichen
-set editor="vim -c 'set tw=70 et' -c 'set wrap' '+/^$' -c 'nohl'"
+set editor="reattach-to-user-namespace vim -c 'set tw=70 et' -c 'set wrap' '+/^$' -c 'nohl'"
