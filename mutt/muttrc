@@ -36,7 +36,7 @@ macro index,pager \c_ \
 <enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
       "notmuch: search mail (maps to ctrl-/)"
 
-macro index,pager \cO \
+macro index,pager <esc>o \
 "<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
 <shell-escape>mkdir -p /tmp/caches/notmuch/mutt/results<enter>\
 <pipe-message>notmuch-mutt -o /tmp/caches/notmuch/mutt/results -r thread<enter>\
@@ -46,9 +46,9 @@ macro index,pager \cO \
 
 # Highrise forwarding
 # comma before dropbox address to maintain validity in case of other BCC addresses
-macro compose \ch "<edit-bcc>,`~/.mutt/getsecret.py highrise-dropbox`<enter>" \
+macro compose <esc>h "<edit-bcc>,`~/.mutt/getsecret.py highrise-dropbox`<enter>" \
   "add BCC for Highrise"
-macro index,pager \ch "\
+macro index,pager <esc>h "\
 <enter-command>set my_old_forward_edit=\$forward_edit my_old_signature=\$signature my_old_mime_forward=\$mime_forward<enter>\
 <enter-command>set forward_edit=no<enter>\
 <enter-command>unset signature mime_forward<enter>\
