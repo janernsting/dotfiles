@@ -1,12 +1,9 @@
 #!/usr/bin/env python
-import gnomekeyring
+import keyring
 import re
 
-def get_secret(display_name, keyring_name = "login"):
-  for id in gnomekeyring.list_item_ids_sync(keyring_name):
-    item = gnomekeyring.item_get_info_sync(keyring_name, id)
-    if display_name == item.get_display_name():
-      return item.get_secret()
+def get_secret(display_name):
+  return keyring.get_password(display_name, display_name)
 
 top_level_folders = ['Drafts', 'Sent', 'Trash', 'Junk', ]
 translation = { 'Junk': 'spam', }

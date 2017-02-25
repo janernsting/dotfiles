@@ -1,6 +1,6 @@
 #!/usr/bin/env python
  
-import offlineimap_functions as funcs
+import keyring
 import sys
  
 def display_usage():
@@ -13,4 +13,4 @@ if __name__ == '__main__':
     sys.exit(1)
 
   display_name = sys.argv[1]
-  print funcs.get_secret(display_name)
+  print keyring.get_password(display_name, display_name)
