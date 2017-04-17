@@ -14,13 +14,11 @@ pythonfile = ~/.mutt/offlineimap_functions.py
 [Account gmail]
 localrepository = local-gmail
 remoterepository = remote-gmail
-status_backend = sqlite
 postsynchook = notmuch new
 
 [Account it-agile]
 localrepository = local-it-agile
 remoterepository = remote-it-agile
-status_backend = sqlite
 postsynchook = notmuch new
 
 [Repository local-gmail]
