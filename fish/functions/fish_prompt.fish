@@ -255,7 +255,7 @@ function c -d 'List command history, load command from prompt with c <prompt num
   switch $cmd_num
     case (seq 0 (expr $num_items - 1))
       commandline $$cmd_hist[1][(expr $num_items - $cmd_num)]
-      echo $$cmd_hist[1][(expr $num_items - $cmd_num)] | xsel
+      echo $$cmd_hist[1][(expr $num_items - $cmd_num)] | pbcopy
       for i in (seq (count (echo $$cmd_hist\n)))
         tput cuu1
       end
