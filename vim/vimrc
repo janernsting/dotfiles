@@ -91,6 +91,7 @@ inoremap . .<c-g>u
 inoremap , ,<c-g>u
 inoremap ! !<c-g>u
 inoremap ? ?<c-g>u
+inoremap <c-u> <c-g>u<c-u>
 
 " Leader key on space bar
 let mapleader = ' '
