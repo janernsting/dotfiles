@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-import keyring
+
+import subprocess
 import re
 
 def get_secret(display_name):
-  return keyring.get_password(display_name, display_name)
+  return subprocess.check_output(['python', 'getsecret.py', display_name])
 
 top_level_folders = ['Drafts', 'Sent', 'Trash', 'Junk', ]
 translation = { 'Junk': 'spam', }
