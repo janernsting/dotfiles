@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
 import subprocess
+import os
 import re
 
 def get_secret(display_name):
-  return subprocess.check_output(['python', 'getsecret.py', display_name])
+  return subprocess.check_output(['python', os.path.expanduser('~/.mutt/getsecret.py'), display_name])
 
 top_level_folders = ['Drafts', 'Sent', 'Trash', 'Junk', ]
 translation = { 'Junk': 'spam', }
