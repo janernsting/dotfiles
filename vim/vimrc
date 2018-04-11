@@ -123,8 +123,9 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " NERDTree toggling
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 
-" Gundo toggling
-nmap <silent> <leader>g :GundoToggle<CR>
+" Undotree toggling
+nmap <silent> <leader>g :UndotreeToggle<CR>
+let g:undotree_SetFocusWhenToggle = 1
 
 " ZoomWin toggling
 nnoremap <silent> <leader><leader> :ZoomWin<CR>
