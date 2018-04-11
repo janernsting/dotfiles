@@ -89,3 +89,7 @@ export TERM="screen-256color"
 
 # ignore duplicate history entries
 export HISTCONTROL=erasedups
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/janernsting/.sdkman"
+[[ -s "/Users/janernsting/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/janernsting/.sdkman/bin/sdkman-init.sh"
