@@ -9,7 +9,7 @@ end
 set -gx EDITOR vim
 
 set fish_key_bindings fish_vi_key_bindings
-eval (perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
+eval (perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/python/libexec/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export BYOBU_PREFIX=/usr/local
