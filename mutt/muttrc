@@ -56,11 +56,6 @@ macro index,pager <esc>h "\
 <enter-command>set forward_edit=\$my_old_forward_edit signature=\$my_old_signature mime_forward=\$my_old_mime_forward<enter>" \
   "forward to Highrise"
 
-macro compose <esc>c "\
-<edit-from>\cu Company Coach \<company-coach@it-agile.de\><enter>\
-<edit-cc>,Company Coach \<company-coach@it-agile.de\><enter>" \
-  "Send/reply via Company Coach"
-
 source ~/.mutt/sort-threads.rc
 set sort_aux=date-sent
 
