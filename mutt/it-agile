@@ -1,6 +1,6 @@
 set from="jan.ernsting@it-agile.de"
 set hostname="gmail.com"
-alternates "^(je|company-coach|cc|admin[s])@it-agile.de$"
+alternates "^(je)@it-agile.de$"
 
 color status black yellow
 
