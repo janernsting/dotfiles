@@ -10,10 +10,6 @@
 [submodule "vim/bundle/gitv"]
 	path = vim/bundle/gitv
 	url = https://github.com/gregsexton/gitv.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
-	ignore = dirty
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
@@ -74,9 +70,6 @@
 [submodule "vim/bundle/renamer"]
 	path = vim/bundle/renamer
 	url = https://github.com/vim-scripts/renamer.vim.git
-[submodule "zsh/custom/plugins/zsh-syntax-highlighting"]
-	path = zsh/custom/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "vim/bundle/DidYouMean"]
 	path = vim/bundle/DidYouMean
 	url = https://github.com/EinfachToll/DidYouMean.git

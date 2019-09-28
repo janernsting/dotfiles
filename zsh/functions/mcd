@@ -1,5 +1,0 @@
-# Make directory and change into it.
-
-function mcd() {
-  echo "use 'take' instead (provided by oh-my-zsh)"
-}
