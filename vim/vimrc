@@ -13,9 +13,11 @@ call pathogen#helptags()
 " to ensure compatibility with fish
 set shell=/bin/sh
 
-" place backup files in folders dedicated to temporary files
+" place swap and undo files in dedicated folder
 set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim/swapdir
+set undofile
+set undodir=~/.vim/undodir
 
 " syntax highlighting
 syntax enable
