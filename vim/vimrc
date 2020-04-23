@@ -14,7 +14,6 @@ call pathogen#helptags()
 set shell=/bin/sh
 
 " place swap and undo files in dedicated folder
-set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim/swapdir
 set undofile
 set undodir=~/.vim/undodir
