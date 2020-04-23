@@ -15,7 +15,7 @@ set shell=/bin/sh
 
 " place backup files in folders dedicated to temporary files
 set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim/swapdir
 
 " syntax highlighting
 syntax enable
