@@ -13,8 +13,13 @@ LESS_TERMCAP_us:\x1b\x5b01\x3b32m
 
 # Holiday reminders
 
-* Yammer (+Post)
-* Slack + DND + Away (+ #coffee-buddies for longer leaves)
-* Gmail Autoreply + Accounts on devices
-
-Text message for telephone calls: Ich bin im Urlaub und kehre am 03. April zurück. Kann dein Anliegen bis dahin warten?
+* Slack
+  * set custom DND period
+  * set status to Away
+  * #coffee-buddies for longer leaves
+  * remove app from devices
+* Mail
+  * Autoreply
+  * disable accounts on devices
+* Calls
+  * Message template: `Ich bin im Urlaub und kehre am 03. April zurück. Kann dein Anliegen bis dahin warten?`
