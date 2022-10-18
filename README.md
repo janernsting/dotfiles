@@ -19,7 +19,29 @@ LESS_TERMCAP_us:\x1b\x5b01\x3b32m
   * #coffee-buddies for longer leaves
   * remove app from devices
 * Mail
-  * Autoreply
+  * Autoreply (see below)
   * disable accounts on devices
 * Calls
   * Message template: `Ich bin im Urlaub und kehre am 03. April zurück. Kann dein Anliegen bis dahin warten?`
+
+# Auto reply
+
+```
+Liebe Absender:in,
+
+ich bin aktuell mit meiner Familie im Urlaub und tanke neue Kraft. Ab dem 20. Oktober bin ich wieder erreichbar.
+
+Während dieser Zeit bearbeite ich meine E-Mail nicht. Ich bitte dafür um
+Verständnis. Danach gehe ich meine Postfach schrittweise durch.
+
+Falls Sie ein dringendes Anliegen haben rufen Sie mich bitte mobil an! Oder Sie
+wenden sich an meine Kolleg:innen unter info@it-agile.de.
+
+Sie können auch jetzt schon mit mir einen kurzen Gesprächstermin
+vereinbaren: https://calendly.com/jan-ernsting/
+
+Ich wünsche Ihnen beste Gesundheit!
+
+Viele Grüße
+Jan Ernsting
+```
