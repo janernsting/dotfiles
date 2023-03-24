@@ -35,8 +35,7 @@ Während dieser Zeit bearbeite ich meine E-Mails nicht. Ich bitte dafür um Vers
 
 Falls Sie ein dringendes Anliegen haben, rufen Sie mich bitte mobil an! Oder Sie wenden sich an meine Kolleg:innen unter info@it-agile.de.
 
-Sie können auch jetzt schon mit mir einen kurzen Gesprächstermin
-vereinbaren: https://calendly.com/jan-ernsting/
+Sie können auch jetzt schon mit mir einen kurzen Gesprächstermin vereinbaren: https://calendly.com/jan-ernsting/
 
 Ich wünsche Ihnen beste Gesundheit!
 
