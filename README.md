@@ -1,16 +1,5 @@
 My dotfiles
 
-# Colouring of manpages
-
-```LESS_TERMCAP_mb:\x1b\x5b01\x3b31m
-LESS_TERMCAP_md:\x1b\x5b01\x3b31m
-LESS_TERMCAP_me:\x1b\x5b0m
-LESS_TERMCAP_se:\x1b\x5b0m
-LESS_TERMCAP_so:\x1b\x5b01\x3b44\x3b33m
-LESS_TERMCAP_ue:\x1b\x5b0m
-LESS_TERMCAP_us:\x1b\x5b01\x3b32m
-```
-
 # Holiday reminders
 
 * Slack
@@ -24,7 +13,7 @@ LESS_TERMCAP_us:\x1b\x5b01\x3b32m
 * Calls
   * Message template: `Ich bin im Urlaub und kehre am 03. April zurück. Kann dein Anliegen bis dahin warten?`
 
-# Auto reply
+## Auto reply
 
 ```
 Liebe Absender:in,
@@ -41,4 +30,15 @@ Ich wünsche Ihnen beste Gesundheit!
 
 Viele Grüße
 Jan Ernsting
+```
+
+# Colouring of manpages
+
+```LESS_TERMCAP_mb:\x1b\x5b01\x3b31m
+LESS_TERMCAP_md:\x1b\x5b01\x3b31m
+LESS_TERMCAP_me:\x1b\x5b0m
+LESS_TERMCAP_se:\x1b\x5b0m
+LESS_TERMCAP_so:\x1b\x5b01\x3b44\x3b33m
+LESS_TERMCAP_ue:\x1b\x5b0m
+LESS_TERMCAP_us:\x1b\x5b01\x3b32m
 ```
