@@ -20,7 +20,7 @@ LESS_TERMCAP_us:\x1b\x5b01\x3b32m
   * remove app from devices
 * Mail
   * Autoreply (see below)
-  * disable accounts on devices
+  * Remove work accounts from favourites
 * Calls
   * Message template: `Ich bin im Urlaub und kehre am 03. April zurück. Kann dein Anliegen bis dahin warten?`
 
