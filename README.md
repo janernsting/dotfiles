@@ -31,11 +31,9 @@ Liebe Absender:in,
 
 ich bin aktuell mit meiner Familie im Urlaub und tanke neue Kraft. Ab dem 20. Oktober bin ich wieder erreichbar.
 
-Während dieser Zeit bearbeite ich meine E-Mail nicht. Ich bitte dafür um
-Verständnis. Danach gehe ich meine Postfach schrittweise durch.
+Während dieser Zeit bearbeite ich meine E-Mails nicht. Ich bitte dafür um Verständnis. Danach gehe ich mein Postfach schrittweise durch.
 
-Falls Sie ein dringendes Anliegen haben rufen Sie mich bitte mobil an! Oder Sie
-wenden sich an meine Kolleg:innen unter info@it-agile.de.
+Falls Sie ein dringendes Anliegen haben, rufen Sie mich bitte mobil an! Oder Sie wenden sich an meine Kolleg:innen unter info@it-agile.de.
 
 Sie können auch jetzt schon mit mir einen kurzen Gesprächstermin
 vereinbaren: https://calendly.com/jan-ernsting/
