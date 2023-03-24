@@ -7,3 +7,4 @@ abbr -a gr git remote
 abbr -a grh git reset HEAD
 abbr -a grhh git reset HEAD --hard
 abbr -a lg git lg
+abbr -a !! --position anywhere --function last_history_item
