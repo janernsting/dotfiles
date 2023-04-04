@@ -7,6 +7,8 @@ My dotfiles
   * set status to Away
   * #coffee-buddies for longer leaves
   * remove app from devices
+* Teams
+  * Configure Quiet Days on iOS
 * Mail
   * Autoreply (see below)
   * Remove work accounts from favourites
