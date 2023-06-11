@@ -12,6 +12,8 @@ My dotfiles
 * Mail
   * Autoreply (see below)
   * Remove work accounts from favourites
+* AD accounts
+  * Renew password to reset password renewal interval
 * Calls
   * Message template: `Ich bin im Urlaub und kehre am 03. April zurück. Kann dein Anliegen bis dahin warten?`
 
