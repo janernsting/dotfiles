@@ -11,7 +11,7 @@ My dotfiles
   * Configure Quiet Days on iOS
 * Mail
   * Autoreply (see below)
-  * Remove work accounts from favourites
+  * Remove work accounts and aggregator/all from favourites
 * AD accounts
   * Renew password to reset password renewal interval
 * Calls
